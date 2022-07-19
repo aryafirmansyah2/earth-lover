@@ -18,7 +18,7 @@ const Title = tw.h1`text-lg font-semibold tracking-wider`
 const Map = tw.img`mt-2 w-full`
 const Deskripsi = tw.p`font-light text-sm`
 const Bg = tw.div`w-full bg-blue-100 h-full `
-const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto`
+const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto `
 
 function TambahAlamat() {
     return (
