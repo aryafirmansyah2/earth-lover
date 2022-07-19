@@ -1,3 +1,10 @@
+@font-face {
+  font-family: SF Pro Rounded; 
+  src: url(./assets/Font/SF Pro Rounded Regular/@font-face/ead4092f880f75ff0883ced1856b2c37.woff); 
+}
+#root{
+  font-family: SF Pro Rounded;
+}
 .App {
   text-align: center;
 }

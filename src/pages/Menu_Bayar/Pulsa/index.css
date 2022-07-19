@@ -1,0 +1,14 @@
+.menu.active button{
+    color: #16BF78;
+    border-bottom: 4px solid  #16BF78;
+}
+
+.nominal.active {
+    background-color: #16BF78;
+    color: #fff;
+}
+.list.active {
+    background-color: #16BF78;
+    color: #fff;
+}
+    

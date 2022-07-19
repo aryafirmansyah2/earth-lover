@@ -1,0 +1,21 @@
+.case-btn-photo {
+  position: relative;
+  margin-right: 24px;
+}
+
+input[type="file"] {
+  position:absolute;
+  background: black;
+  width: 100px;
+  left: 0;
+  top:0;
+  width:100%;
+  opacity: 0;
+}
+
+label {
+  background: #16BF78;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
