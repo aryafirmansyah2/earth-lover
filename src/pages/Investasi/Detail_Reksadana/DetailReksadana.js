@@ -12,8 +12,8 @@ const CaseListReksadana = tw.div`w-full h-28 flex items-center  bg-[#EBFEF2] rou
 const CaseLogo = tw.div`bg-[#16BF78]  flex items-center justify-center rounded-2xl ml-5`
 const Logo = tw.img`px-5 py-8`
 const CaseTitle = tw.div`pl-3 flex flex-col justify-center items-start`
-const NameLogo = tw.h2`text-[16px] font-medium text-black `
-const Deskripsi = tw.h2`text-[16px] font-normal text-[#535353]`
+const NameLogo = tw.h2`text-[16px] font-Medium text-black `
+const Deskripsi = tw.h2`text-[16px] font-Reguler text-[#535353]`
 
 const CaseInfoA = tw.div`w-full flex flex-col  mt-5 `
 const Case = tw.div`w-full flex flex-col `

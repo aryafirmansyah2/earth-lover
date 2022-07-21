@@ -11,7 +11,7 @@ import MainButton from '../../../components/common/Button/Main'
 const Case = tw.div`w-full flex flex-col `
 const CaseWilayah = tw.div`w-full flex flex-col`
 const CaseNomer = tw.div`w-full flex flex-col mt-7`
-const Title = tw.p``
+const Title = tw.p`font-Medium`
 const InputWilayah = tw.button`border-2 rounded-xl mt-2`
 const Caseinput = tw.div`px-4 py-2 flex items-center justify-between`
 const Nama = tw.p``

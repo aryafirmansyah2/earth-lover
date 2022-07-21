@@ -14,11 +14,11 @@ const CaseListReksadana = tw.div`w-full h-28 flex items-center  bg-[#EBFEF2] rou
 const Profile = tw.div` flex items-center justify-center rounded-2xl ml-5`
 const Logo = tw.img`w-24`
 const CaseTitle = tw.div`pl-3 flex justify-between items-center w-full`
-const Name = tw.h2`text-[16px] font-semibold tracking-wider pl-3 text-black `
+const Name = tw.h2`text-[16px] font-Semibold  pl-3 text-black `
 
 const Case = tw.div`w-full flex flex-col items-center justify-center mt-4`
 const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
-const Title = tw.h1`text-lg font-semibold tracking-wider`
+const Title = tw.h1`text-lg font-Semibold `
 const InputTahun = tw.button`border-2 rounded-xl mt-2 w-full border-green-1`
 const Caseinput = tw.div`px-4 py-4 flex items-center justify-between `
 const Nama = tw.p`text-green-1`

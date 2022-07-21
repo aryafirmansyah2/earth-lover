@@ -9,10 +9,10 @@ import MainButton from '../../components/common/Button/Main'
 import { AiFillEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import Layout from '../../components/Layout'
 
-const CaseHeader = tw.div`w-full h-24 bg-[#16BF78] flex items-center justify-center text-4xl font-bold text-white`
+const CaseHeader = tw.div`w-full h-24 bg-[#16BF78] flex items-center justify-center text-4xl font-Bold text-white`
 const FormInput = tw.div`flex flex-col justify-items-start `
 const TitleInput = tw.div`my-3`
-const Title = tw.p`text-lg font-light`
+const Title = tw.p`text-lg font-Light`
 const ButtonLink = tw.div`w-full flex items-center justify-center flex-col `
 const CaseOr = tw.h3`w-full text-center border-b-2 border-[#D0D0D0] leading-[0.1em] mt-8`
 const LineRL = tw.span`bg-[#FAFAFA] px-3 text-[#D0D0D0]`

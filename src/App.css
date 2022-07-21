@@ -1,45 +1,51 @@
+
+@import url(//db.onlinewebfonts.com/c/69d6b8e9293070d600d64d87d321cefe?family=SF+Pro+Rounded);
+@import url(//db.onlinewebfonts.com/c/9d7d67ddafe335638268099d497d864d?family=SF+Pro+Rounded);
+@import url(//db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded);
+@import url(//db.onlinewebfonts.com/c/bde89ab00cb34cc906059b3cbdd513dc?family=SF+Pro+Rounded);
+@import url(//db.onlinewebfonts.com/c/49cf9e586b122fd8b8cf67c4df697fb9?family=SF+Pro+Rounded);
+@import url(//db.onlinewebfonts.com/c/511031ed9122c8ea1450b18b876221fe?family=SF+Pro+Rounded);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-  font-family: SF Pro Rounded; 
-  src: url(./assets/Font/SF Pro Rounded Regular/@font-face/ead4092f880f75ff0883ced1856b2c37.woff); 
+  font-family: "SF Pro Rounded Ultralight";
+  src: url("//db.onlinewebfonts.com/t/69d6b8e9293070d600d64d87d321cefe.eot");
+  src: url("//db.onlinewebfonts.com/t/69d6b8e9293070d600d64d87d321cefe.woff")
+    format("woff");
 }
-#root{
-  font-family: SF Pro Rounded;
+@font-face {
+  font-family: "SF Pro Rounded Light";
+  src: url("//db.onlinewebfonts.com/t/9d7d67ddafe335638268099d497d864d.eot");
+  src: url("//db.onlinewebfonts.com/t/9d7d67ddafe335638268099d497d864d.woff")
+    format("woff");
 }
-.App {
-  text-align: center;
+@font-face {
+  font-family: "SF Pro Rounded Reguler";
+  src: url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot");
+  src: url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff")
+    format("woff");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "SF Pro Rounded Medium";
+  src: url("//db.onlinewebfonts.com/t/bde89ab00cb34cc906059b3cbdd513dc.eot");
+  src: url("//db.onlinewebfonts.com/t/bde89ab00cb34cc906059b3cbdd513dc.woff")
+    format("woff");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "SF Pro Rounded Semibold";
+  src: url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.eot");
+  src: url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.woff")
+    format("woff");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "SF Pro Rounded Bold";
+  src: url("//db.onlinewebfonts.com/t/511031ed9122c8ea1450b18b876221fe.eot");
+  src: url("//db.onlinewebfonts.com/t/511031ed9122c8ea1450b18b876221fe.woff")
+    format("woff");
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.root{
+  font-family:"SF Pro Rounded Reguler"
 }

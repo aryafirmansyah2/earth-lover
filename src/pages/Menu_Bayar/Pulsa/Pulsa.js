@@ -10,11 +10,11 @@ import Data from './Data/data'
 import MainButton from '../../../components/common/Button/Main'
 
 const CaseMenu = tw.div`flex justify-around items-center border-t-2 `
-const MenuPulsa = tw.button`w-[240px] text-[#AAAAAA] text-lg font-medium border-b-2   py-5 `
+const MenuPulsa = tw.button`w-[240px] text-[#AAAAAA] text-lg font-Medium border-b-2   py-5 `
 
 const Case = tw.div`w-full flex flex-col items-center justify-center mt-4`
 const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
-const Title = tw.h1`text-lg font-medium`
+const Title = tw.h1`text-lg font-Medium`
 
 const CaseNominal = tw.div`w-full gap-5 grid grid-cols-3 mt-4`
 const Nominal =tw.button`border-2 p-2 border-green-1 rounded-lg focus:bg-green-1 focus:text-white`

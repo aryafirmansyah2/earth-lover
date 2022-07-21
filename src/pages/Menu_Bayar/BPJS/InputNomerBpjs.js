@@ -8,7 +8,7 @@ import Header from '../../../components/Header'
 import Layout from '../../../components/Layout'
 
 const CaseNomer = tw.div`w-full flex flex-col mb-[650px] `
-const Title = tw.p``
+const Title = tw.p`font-Medium`
 
 function InputNomerBpjs() {
     return (

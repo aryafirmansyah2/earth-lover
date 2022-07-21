@@ -15,25 +15,25 @@ const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto`
 
 const Case = tw.div`w-full flex flex-col items-center justify-center mt-4`
 const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
-const Title = tw.h1`text-lg font-medium`
+const Title = tw.h1`text-lg font-Medium`
 const ProfilePetugas = tw.div` w-full flex items-center justify-between py-4`
 const FotoPtgs = tw.img``
 const CaseInfo = tw.div`flex flex-col justify-center items-start  `
-const NamaPtgs = tw.h2`text-lg font-normal `
-const Id = tw.h2`text-[16px] font-bold`
+const NamaPtgs = tw.h2`text-lg font-Reguler `
+const Id = tw.h2`text-[16px] font-Bold`
 const CaseStatus = tw.div`flex items-center w-40`
 const IconStatus = tw.div`mr-3 text-[#979797]`
-const TitleStatus = tw.p`text-sm text-[#979797] font-normal`
+const TitleStatus = tw.p`text-sm text-[#979797] font-Reguler`
 
 const CaseAlamat = tw.div`flex flex-col justify-center items-start py-4`
-const NamaBangunan = tw.h2`text-lg font-semibold `
-const Alamat = tw.h2`text-[16px] font-light`
+const NamaBangunan = tw.h2`text-lg font-Semibold `
+const Alamat = tw.h2`text-[16px] font-Light`
 
-const InputDisabled = tw.input`w-full bg-[#EBFEF2] text-green-1 text-sm font-semibold tracking-wider rounded-lg py-3 px-2 my-4  `
+const InputDisabled = tw.input`w-full bg-[#EBFEF2] text-green-1 text-sm font-Semibold  rounded-lg py-3 px-2 my-4  `
 
-const InputNumber = tw.input`w-full bg-transparent border-[1.5px] border-green-1 text-green-1 text-sm font-semibold rounded-lg py-3 px-2 my-4  `
+const InputNumber = tw.input`w-full bg-transparent border-[1.5px] border-green-1 text-green-1 text-sm font-Semibold rounded-lg py-3 px-2 my-4  `
 const CaseInputPw = tw.div`w-full relative items-center justify-end flex`
-const ToggleEye = tw.p`absolute mt-2 mr-5 text-green-1 font-semibold`
+const ToggleEye = tw.p`absolute mt-2 mr-5 text-green-1 font-Semibold`
 
 
 function DetailOrder() {

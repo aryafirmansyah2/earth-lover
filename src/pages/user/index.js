@@ -24,12 +24,12 @@ const CaseProfile = tw.div`absolute w-full h-full flex items-center justify-star
 const BgInfoUser = tw.img`w-full`
 const CaseAvatar = tw.img`ml-7`
 const CaseTextUser = tw.div` ml-5 flex flex-col items-start justify-start `
-const Name = tw.div`text-white font-semibold text-xl`
-const NoHp = tw.div`text-white font-light text-sm`
+const Name = tw.div`text-white font-Semibold text-xl`
+const NoHp = tw.div`text-white font-Light text-sm`
 const CaseIcon = tw.div` ml-32 text-white text-3xl`
 const IconEdit = tw.a``
 
-const Title = tw.h1`w-full text-[20px] font-semibold mt-3 mb-4`
+const Title = tw.h1`w-full text-[20px] font-Semibold mt-3 mb-4`
 
 function User() {
     return (

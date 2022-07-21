@@ -8,7 +8,7 @@ import Layout from '../../../components/Layout'
 const CaseMetode = tw.div`flex items-center justify-center w-full`
 const Case = tw.div`flex items-center justify-between p-6 w-full`
 const CasePoin = tw.div`flex flex-col items-start`
-const Metode = tw.p`text-lg text-[#454545] font-medium`
+const Metode = tw.p`text-lg text-[#454545] font-Medium`
 const JumlahPoin = tw.p`text-[#989898] text-[12px]`
 const Check = tw.input``
 

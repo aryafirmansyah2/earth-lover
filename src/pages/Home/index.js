@@ -26,31 +26,31 @@ const ContentHome = tw.div`relative h-[950px]`
 const BgHero = tw.img`w-full `
 const ContainerHero = tw.div`w-full h-full top-0 px-5 absolute `
 const CaseText = tw.div`pt-44 pb-14`
-const TextHeroMain = tw.h2`text-white text-[32px] font-bold tracking-wider pr-16 leading-10`
-const TextHeroSecond = tw.h2`text-white text-[16px] font-normal pr-24 mt-3`
+const TextHeroMain = tw.h2`text-white text-[32px] font-Bold  pr-16 leading-10`
+const TextHeroSecond = tw.h2`text-white text-[16px] font-Reguler pr-24 mt-3`
 
 const ContentPoin = tw.div`relative w-full  `
 const BgPoin = tw.img`w-full`
 const ContainerPoin = tw.div`w-full py-4 px-6 absolute top-0`
 const CasePoin = tw.div`flex flex-col`
-const TitlePoin = tw.h2`text-white text-lg font-normal mt-2`
-const ScorePoin = tw.h2`text-4xl font-bold text-white `
+const TitlePoin = tw.h2`text-white text-lg font-Reguler mt-2`
+const ScorePoin = tw.h2`text-4xl font-Bold text-white `
 const LinkRiwayat = tw.div`text-[#FFE080] mt-9 flex items-center`
-const TextLink = tw.a`text-[#FFE080] text-[16px] font-medium`
+const TextLink = tw.a`text-[#FFE080] text-[16px] font-Medium`
 const IconArrow = tw.div`text-xl ml-2`
 
 const ContentBuy = tw.div`relative w-full mt-5`
 const BgBuy = tw.img`w-full`
 const ContainerBuy = tw.div`w-full h-full px-4 absolute top-0`
 const CaseBuy = tw.div`flex flex-col items-center`
-const TextBuyMain = tw.h2`text-lg font-bold text-white tracking-wide pt-2`
-const TextBuySecond = tw.h2`text-sm font-normal text-white`
+const TextBuyMain = tw.h2`text-lg font-Bold text-white tracking-wide pt-2`
+const TextBuySecond = tw.h2`text-sm font-Reguler text-white`
 const IconHeroBuy = tw.img`absolute bottom-0 left-28 w-48`
 const ButtonEnd = tw.div`flex justify-end`
 const ButtonBuy = tw.button`bg-[#FBDB35]  mt-7 px-3 py-[2px]  rounded-2xl flex items-center`
-const TextButton = tw.p`text-sm font-medium`
+const TextButton = tw.p`text-sm font-Medium`
 
-const TextBayar = tw.h2`text-lg font-medium mt-3 mb-2 `
+const TextBayar = tw.h2`text-lg font-Medium mt-3 mb-2 `
 
 function Home() {
   return (

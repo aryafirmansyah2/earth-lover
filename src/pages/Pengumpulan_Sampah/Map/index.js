@@ -21,13 +21,13 @@ const IconArrow = tw.div`absolute text-5xl w-16 h-16 bg-white flex justify-cente
 const ProfilePetugas = tw.div` w-full flex items-center justify-start `
 const FotoPtgs = tw.img`rounded-[100%] w-32`
 const CaseInfoKurir = tw.div`flex flex-col justify-center items-start ml-5  `
-const NamaPtgs = tw.h2`text-[16px] font-normal text-[#737373] `
-const Id = tw.h2`text-[24px] font-bold`
+const NamaPtgs = tw.h2`text-[16px] font-Reguler text-[#737373] `
+const Id = tw.h2`text-[24px] font-Bold`
 const ButtonPtgs = tw.button`bg-green-1 text-white text-[16px] p-2 rounded-lg mt-5`
 
 const CaseStatus = tw.div`w-full flex items-center justify-center mb-10 mt-5`
 const IconStatus = tw.div`mr-3 text-green-1 text-3xl`
-const TitleStatus = tw.p`text-xl font-bold ml-3`
+const TitleStatus = tw.p`text-xl font-Bold ml-3`
 function Map() {
     return (
         <div>

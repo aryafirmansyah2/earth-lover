@@ -15,7 +15,7 @@ const BgNavbar = tw.img`w-full`
 const CaseIcons = tw.div`absolute w-full h-full  top-0 flex items-end justify-around pb-5 `
 const CaseIcon = tw.div`w-full flex flex-col items-center justify-end h-full `
 const IconMenu = tw.div`z-20 text-2xl text-[#B7E2C6]  `
-const TitleMenu = tw.div`text-black text-sm font-semibold tracking-wider`
+const TitleMenu = tw.div`text-black text-sm font-Semibold `
 const Circle = tw.span` w-[75px] h-[75px] flex justify-center items-center bg-[#D9FDE5] rounded-[100%]`
 
 const margin = {

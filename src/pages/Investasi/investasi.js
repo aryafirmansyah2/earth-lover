@@ -16,11 +16,11 @@ const CaseCard = tw.div`w-full h-full bg-[#EBFEF2] relative rounded-2xl mt-5`
 const CaseBg = tw.img`w-full`
 const CaseContent = tw.div`w-full h-full top-0 absolute items-center justify-between flex px-5`
 const CaseInfo = tw.div` flex flex-col w-full`
-const TitleCard = tw.h1`text-sm font-medium `
-const Price = tw.h1`text-2xl text-[#16BF78] font-bold`
+const TitleCard = tw.h1`text-sm font-Medium `
+const Price = tw.h1`text-2xl text-[#16BF78] font-Bold`
 const CaseButton = tw.div`w-1/2 h-full items-center justify-center flex`
-const ButtonSell = tw.button`bg-[#16BF78] text-white text-sm font-medium px-6 py-2 rounded-lg`
-const Title = tw.h1`w-full text-xl font-medium mt-7`
+const ButtonSell = tw.button`bg-[#16BF78] text-white text-sm font-Medium px-6 py-2 rounded-lg`
+const Title = tw.h1`w-full text-xl font-Medium mt-7`
 
 function Investasi() {
     return (

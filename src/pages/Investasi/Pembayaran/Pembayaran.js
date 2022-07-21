@@ -8,12 +8,12 @@ import Layout from '../../../components/Layout'
 
 const CaseTotalHarga = tw.div`w-full  flex flex-col items-center justify-center`
 const TitleHarga = tw.p` text-[16px] text-[#989898]`
-const NominalHarga = tw.p` text-[24px] text-[#454545] font-medium`
+const NominalHarga = tw.p` text-[24px] text-[#454545] font-Medium`
 const CasePadding1 = tw.div`w-full flex flex-col items-start p-6`
-const Title = tw.h2`text-[18px] font-medium`
+const Title = tw.h2`text-[18px] font-Medium`
 const CaseMetodePembayaran = tw.div`w-full flex items-center justify-center `
 const CasePadding2 = tw.div`w-full flex items-center justify-between  p-6`
-const NamaMetode = tw.p` text-[16px] text-[#454545] font-medium`
+const NamaMetode = tw.p` text-[16px] text-[#454545] font-Medium`
 const ButtonUbah = tw.button`bg-[#D9FDE5] text-green-1 px-4 py-2 rounded-2xl`
 
 const CaseInfoPembayaran = tw.div` w-full flex flex-col bottom-0 mt-96`
@@ -21,7 +21,7 @@ const CaseInfo = tw.div``
 const CaseContent = tw.div`flex justify-between items-center`
 const Content = tw.p``
 const Line = tw.div`border-b-[1px] w-full border-b-[#E1E1E1]`
-const MainContent = tw.p`text-green-1 text-[18px] font-semibold tracking-wider`
+const MainContent = tw.p`text-green-1 text-[18px] font-Semibold `
 
 
 

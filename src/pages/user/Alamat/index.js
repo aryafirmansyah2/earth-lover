@@ -8,8 +8,8 @@ import Layout from '../../../components/Layout'
 
 const CaseListReksadana = tw.div`w-full  flex items-center  border-2 border-green-1 rounded-lg mb-5`
 const CaseTitle = tw.div`pl-3 flex flex-col justify-center items-start py-3`
-const NameLogo = tw.h2`text-[16px] text-green-1 font-semibold tracking-wider  `
-const Deskripsi = tw.h2`text-[16px] font-normal text-[#535353]`
+const NameLogo = tw.h2`text-[16px] text-green-1 font-Semibold   `
+const Deskripsi = tw.h2`text-[16px] font-Reguler text-[#535353]`
 
 function Alamat() {
     return (

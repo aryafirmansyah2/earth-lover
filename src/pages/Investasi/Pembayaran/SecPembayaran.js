@@ -8,7 +8,7 @@ import Layout from '../../../components/Layout'
 
 const CaseTotalHarga = tw.div`w-full  flex flex-col items-center justify-center`
 const TitleHarga = tw.p` text-[16px] text-[#989898]`
-const NominalHarga = tw.p` text-[24px] text-[#454545] font-medium`
+const NominalHarga = tw.p` text-[24px] text-[#454545] font-Medium`
 const CasePadding = tw.div`w-full flex items-center justify-between p-6`
 const CaseLeft = tw.div`flex flex-col`
 const CaseRight = tw.div`flex flex-col`

@@ -13,14 +13,14 @@ const CaseListReksadana = tw.div`w-full h-28 flex items-center  bg-[#EBFEF2] rou
 const CaseLogo = tw.div`bg-[#16BF78]  flex items-center justify-center rounded-2xl ml-5`
 const Logo = tw.img`px-5 py-8`
 const CaseTitle = tw.div`pl-3 flex flex-col justify-center items-start`
-const NameLogo = tw.h2`text-[16px] font-medium text-black `
-const Deskripsi = tw.h2`text-[16px] font-normal text-[#535353]`
+const NameLogo = tw.h2`text-[16px] font-Medium text-black `
+const Deskripsi = tw.h2`text-[16px] font-Reguler text-[#535353]`
 
 const CaseNominal = tw.div`w-full flex items-center mt-5`
 const CaseRight = tw.div`flex flex-col items-start mr-52`
-const TitleNominal = tw.p`text-[#989898] text-[16px] font-normal`
-const Harga = tw.h2`font-medium text-[26px]`
-const LembarSaham = tw.p`text-green-1 text-sm font-light`
+const TitleNominal = tw.p`text-[#989898] text-[16px] font-Reguler`
+const Harga = tw.h2`font-Medium text-[26px]`
+const LembarSaham = tw.p`text-green-1 text-sm font-Light`
 const CaseLeft = tw.div``
 const IconCancel = tw.div`text-red-500 text-3xl`
 
