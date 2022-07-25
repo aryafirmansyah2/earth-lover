@@ -41,7 +41,7 @@ function PembayaranMenu() {
           <CaseMetodePembayaran>
             <CasePadding2>
               <NamaMetode>Mandiri Virtual Account</NamaMetode>
-              <Link to="/metode-pembayaran">
+              <Link to="/metode-pembayaran-menu">
                 <ButtonUbah>Ubah</ButtonUbah>
               </Link>
             </CasePadding2>
@@ -50,7 +50,7 @@ function PembayaranMenu() {
           <CaseMetodePembayaran>
             <CasePadding2>
               <NamaMetode style={{color:"#16BF78"}}>Potongan 10%</NamaMetode>
-              <Link to="/metode-pembayaran">
+              <Link to="/voucher-promo">
                 <ButtonUbah>Ubah</ButtonUbah>
               </Link>
             </CasePadding2>

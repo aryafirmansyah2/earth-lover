@@ -1,0 +1,15 @@
+.nav.active div {
+  color: #16bf78;
+}
+.nav.active h1 {
+  color: #16bf78;
+}
+
+.nav:hover .case div
+{
+  color: #16bf78;
+}
+.nav:hover .case h1
+{
+  color: #16bf78;
+}

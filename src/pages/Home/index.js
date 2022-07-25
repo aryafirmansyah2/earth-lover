@@ -20,9 +20,9 @@ import Pbb from '../../assets/Icon/amic.svg'
 import Navbar from '../../components/Navbar';
 
 
-const Bg = tw.div`w-full bg-blue-100 `
-const Plate = tw.div`w-[480px]  bg-[#fefefe] m-auto`
-const ContentHome = tw.div`relative h-[950px]`
+const Bg = tw.div`w-full h-full  bg-blue-100 `
+const Plate = tw.div`max-w-[480px] max-h-full bg-[#fefefe] m-auto z-10`
+const ContentHome = tw.div`relative h-[103vh]`
 const BgHero = tw.img`w-full `
 const ContainerHero = tw.div`w-full h-full top-0 px-5 absolute `
 const CaseText = tw.div`pt-44 pb-14`

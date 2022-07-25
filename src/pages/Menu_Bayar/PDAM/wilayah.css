@@ -1,0 +1,33 @@
+.wilayah {
+  background: transparant;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  display:none;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.wilayah.active {
+  opacity: 1;
+  display:block;
+  transform: translateY(0);
+}
+.wilayah ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wilayah li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.wilayah li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+  font-family:"SF Pro Rounded Reguler"
+}
+

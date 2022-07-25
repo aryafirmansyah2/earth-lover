@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import tw from 'twin.macro'
-import './index.css'
+// import './index.css'
 import { GrFormNext } from 'react-icons/gr'
 import Container from '../../../components/common/Container'
 import Header from '../../../components/Header'
@@ -15,6 +15,7 @@ const Profile = tw.div` flex items-center justify-center rounded-2xl ml-5`
 const Logo = tw.img`w-24`
 const CaseTitle = tw.div`pl-3 flex justify-between items-center w-full`
 const Name = tw.h2`text-[16px] font-Semibold  pl-3 text-black `
+const BtnPhoto = tw.button`bg-green-1 text-white font-Medium p-2 rounded-lg mr-5`
 
 const Case = tw.div`w-full flex flex-col items-center justify-center mt-4`
 const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
@@ -25,23 +26,42 @@ const Nama = tw.p`text-green-1`
 const Icon = tw.div` text-green-1`
 
 function EditUser() {
+    const fileInputRef = useRef(HTMLInputElement);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [imageUrl, setImageUrl] = useState(null);
+
+    useEffect(() => {
+        if (selectedImage) {
+            setImageUrl(URL.createObjectURL(selectedImage));
+        }
+    }, [selectedImage]);
+
+
     return (
         <div>
             <Layout>
                 <Header link={'/user'} title={'Ubah Profile'} />
                 <Container>
                     <CaseListReksadana>
-                        <Profile>
+                        {imageUrl && selectedImage && (
+                            <Profile >
+                                <Logo src={imageUrl} alt={selectedImage.name}  />
+                            </Profile>
+                        )}
+                        {/* <Profile>
                             <Logo src={avatar} />
-                        </Profile>
+                        </Profile> */}
                         <CaseTitle>
                             <Name>
                                 ProfileFoto.jpg
                             </Name>
-                            <div className='case-btn-photo'>
-                                <input type='file' id='file' accept='image/*' />
-                                <label>chose a photo</label>
-                            </div>
+                            <input type='file' id='file' accept='image/*' ref={fileInputRef} style={{ display: "none" }} onChange={e => setSelectedImage(e.target.files[0])} />
+                            <BtnPhoto onClick={(event) => {
+                                event.preventDefault();
+                                fileInputRef.current.click();
+                            }}>Choise Image</BtnPhoto>
+
+
                         </CaseTitle>
                     </CaseListReksadana>
                     <Case>
@@ -65,7 +85,7 @@ function EditUser() {
                     <Case>
                         <CaseContent>
                             <InputTahun>
-                                <NavLink to='/pilih-tahun-pbb'>
+                                <NavLink to='/ubah-pin'>
                                     <Caseinput>
                                         <Nama>Ganti Pin</Nama>
                                         <Icon><GrFormNext /></Icon>
@@ -76,10 +96,10 @@ function EditUser() {
                     </Case>
                 </Container>
                 <Container style={{ width: "100%", position: "absolute", bottom: '0' }}>
-          <NavLink to='/user' >
-            <MainButton>Simpan</MainButton>
-          </NavLink>
-        </Container>
+                    <NavLink to='/user' >
+                        <MainButton>Simpan</MainButton>
+                    </NavLink>
+                </Container>
             </Layout>
         </div>
     )

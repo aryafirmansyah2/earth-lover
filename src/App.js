@@ -32,8 +32,13 @@ import InputTahun from './pages/Menu_Bayar/PBB/Tahun';
 import WilayahPbb from './pages/Menu_Bayar/PBB/WilayahPbb';
 import EditUser from './pages/user/EditUser';
 import Alamat from './pages/user/Alamat';
-import TambahAlamat from './pages/user/TambahAlamat';
+import TambahAlamat from './pages/user/Alamat/TambahAlamat';
 import DetailAlmat from './pages/user/DetailAlamat';
+import Bantuan from './pages/user/Bantuan';
+import VoucherPromo from './pages/Menu_Bayar/Bayar/VoucherPromo';
+import MetodePembayaranMenu from './pages/Menu_Bayar/Bayar/MetodePembayaranMenu';
+import UbahPin from './pages/user/EditUser/UbahPin';
+import Ulasan from './pages/user/Ulasan';
 
 function App() {
   return (
@@ -52,12 +57,17 @@ function App() {
           <Route path='/pembayaran' element={<Pembayaran/>}></Route>
           <Route path='/cara-pembayaran' element={<SecPembayaran/>}></Route>
           <Route path='/metode-pembayaran' element={<MetodePembayaran/>}></Route>
+          <Route path='/metode-pembayaran-menu' element={<MetodePembayaranMenu/>}></Route>
+          <Route path='/voucher-promo' element={<VoucherPromo/>}></Route>
 
           <Route path='/user' element={<User/>}></Route>
           <Route path='/edit-user' element={<EditUser/>}></Route>
+          <Route path='/ubah-pin' element={<UbahPin/>}></Route>
           <Route path='/alamat' element={<Alamat/>}></Route>
           <Route path='/tambah-alamat' element={<TambahAlamat/>}></Route>
           <Route path='/detail-alamat' element={<DetailAlmat/>}></Route>
+          <Route path='/bantuan' element={<Bantuan/>}></Route>
+          <Route path='/ulasan' element={<Ulasan/>}></Route>
 
 
           <Route path='/metode-pengumpulan' element={<Metode/>}></Route>
