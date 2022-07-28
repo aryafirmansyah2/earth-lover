@@ -11,11 +11,14 @@ const CasePoin = tw.div`flex flex-col items-start`
 const Metode = tw.p`text-lg text-[#454545] font-Medium`
 const JumlahPoin = tw.p`text-[#989898] text-[12px]`
 const Check = tw.input``
+const Screen = tw.div`w-full h-screen`
+
 
 function MetodePembayaranMenu() {
     return (
         <div>
             <Layout>
+                <Screen>
                 <Header link={"/bayar"} title={"Metode Pembayaran"} />
                 <Container>
                     <CaseMetode>
@@ -38,6 +41,7 @@ function MetodePembayaranMenu() {
                         </Link>
                     </CaseMetode>
                 </Container>
+                </Screen>
             </Layout>
         </div>
     )

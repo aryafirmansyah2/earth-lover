@@ -13,7 +13,11 @@ module.exports = {
         Medium:["SF Pro Rounded Medium"],
         Semibold:["SF Pro Rounded Semibold"],
         Bold:["SF Pro Rounded Bold"],
-      }
+      },
+      screens: {
+        'sm': '375px',
+        'md': '480px',
+      },
     },
   },
   plugins: [],

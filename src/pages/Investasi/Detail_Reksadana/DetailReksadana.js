@@ -31,12 +31,14 @@ const ImgChart = tw.img`w-full mt-12`
 const CaseWaktu = tw.div`w-full flex flex-col justify-center items-center mb-5`
 const TitleWaktu = tw.p`text-[#989898] mt-5`
 const CaseButton = tw.div`flex justify-around mt-5 `
-const ButtonWaktu = tw.button`mx-5 text-green-1 border-[1px] px-3 py-2 rounded-3xl border-green-1 bg-[#EBFEF2] focus:bg-green-1 focus:text-white`
+const ButtonWaktu = tw.button`mx-5 sm:text-sm md:text-[16px] text-green-1 border-[1px] px-3 py-2 rounded-3xl border-green-1 bg-[#EBFEF2] focus:bg-green-1 focus:text-white`
+const Screen = tw.div`w-full h-screen`
 
 function DetailReksadana() {
     return (
         <div>
             <Layout>
+                <Screen>
                 <Header link={"/investasi"} title={"Detail Reksadana"} />
                 <Container>
                     <CaseListReksadana>
@@ -91,6 +93,7 @@ function DetailReksadana() {
                         <MainButton>Beli</MainButton>
                     </Link>
                 </Container>
+                </Screen>
             </Layout>
         </div>
     )

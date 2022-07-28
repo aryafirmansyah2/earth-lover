@@ -22,63 +22,64 @@ const CaseContent = tw.div`flex justify-between items-center mt-2`
 const Content = tw.p`text-[#989898]`
 const Line = tw.div`border-b-[1px] w-full border-b-[#E1E1E1] mt-2`
 const MainContent = tw.p`text-green-1 text-[18px]  font-Semibold `
-
-
+const Screen = tw.div`w-full h-screen`
 
 function PembayaranMenu() {
   return (
     <div>
       <Layout>
-        <Header link={'/bayar'} title={"Pembayaran"} />
-        <Container>
-          <CaseTotalHarga>
-            <CasePadding1>
-              <TitleHarga>Harga</TitleHarga>
-              <NominalHarga>Rp 15.000</NominalHarga>
-            </CasePadding1>
-          </CaseTotalHarga>
-          <Title>Metode pembayaran</Title>
-          <CaseMetodePembayaran>
-            <CasePadding2>
-              <NamaMetode>Mandiri Virtual Account</NamaMetode>
-              <Link to="/metode-pembayaran-menu">
-                <ButtonUbah>Ubah</ButtonUbah>
-              </Link>
-            </CasePadding2>
-          </CaseMetodePembayaran>
-          <Title>Voucher Promo</Title>
-          <CaseMetodePembayaran>
-            <CasePadding2>
-              <NamaMetode style={{color:"#16BF78"}}>Potongan 10%</NamaMetode>
-              <Link to="/voucher-promo">
-                <ButtonUbah>Ubah</ButtonUbah>
-              </Link>
-            </CasePadding2>
-          </CaseMetodePembayaran>
-        </Container>
-
-        <CaseInfoPembayaran>
+        <Screen>
+          <Header link={'/bayar'} title={"Pembayaran"} />
           <Container>
-            <CaseInfo>
-              <CaseContent>
-                <Content>Harga</Content>
-                <Content>Rp 15.000</Content>
-              </CaseContent>
-              <CaseContent>
-                <Content>Biaya Admin</Content>
-                <Content>Rp 0</Content>
-              </CaseContent>
-              <Line />
-              <CaseContent>
-                <MainContent>Harga</MainContent>
-                <MainContent>Rp 15.000</MainContent>
-              </CaseContent>
-            </CaseInfo>
-            <Link to="/notif-selesai">
-              <MainButton>Bayar</MainButton>
-            </Link>
+            <CaseTotalHarga>
+              <CasePadding1>
+                <TitleHarga>Harga</TitleHarga>
+                <NominalHarga>Rp 15.000</NominalHarga>
+              </CasePadding1>
+            </CaseTotalHarga>
+            <Title>Metode pembayaran</Title>
+            <CaseMetodePembayaran>
+              <CasePadding2>
+                <NamaMetode>Mandiri Virtual Account</NamaMetode>
+                <Link to="/metode-pembayaran-menu">
+                  <ButtonUbah>Ubah</ButtonUbah>
+                </Link>
+              </CasePadding2>
+            </CaseMetodePembayaran>
+            <Title>Voucher Promo</Title>
+            <CaseMetodePembayaran>
+              <CasePadding2>
+                <NamaMetode style={{ color: "#16BF78" }}>Potongan 10%</NamaMetode>
+                <Link to="/voucher-promo">
+                  <ButtonUbah>Ubah</ButtonUbah>
+                </Link>
+              </CasePadding2>
+            </CaseMetodePembayaran>
           </Container>
-        </CaseInfoPembayaran>
+
+          <CaseInfoPembayaran>
+            <Container>
+              <CaseInfo>
+                <CaseContent>
+                  <Content>Harga</Content>
+                  <Content>Rp 15.000</Content>
+                </CaseContent>
+                <CaseContent>
+                  <Content>Biaya Admin</Content>
+                  <Content>Rp 0</Content>
+                </CaseContent>
+                <Line />
+                <CaseContent>
+                  <MainContent>Harga</MainContent>
+                  <MainContent>Rp 15.000</MainContent>
+                </CaseContent>
+              </CaseInfo>
+              <Link to="/notif-selesai">
+                <MainButton>Bayar</MainButton>
+              </Link>
+            </Container>
+          </CaseInfoPembayaran>
+        </Screen>
       </Layout>
     </div>
   )

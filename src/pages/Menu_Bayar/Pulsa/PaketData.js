@@ -10,7 +10,7 @@ import Paket from './Data/PaketData'
 import MainButton from '../../../components/common/Button/Main'
 
 const CaseMenu = tw.div`flex justify-around items-center border-t-2 `
-const MenuPulsa = tw.button`w-[240px] text-[#AAAAAA] text-lg font-Medium border-b-2 py-5`
+const MenuPulsa = tw.button`w-full text-[#AAAAAA] text-lg font-Medium border-b-2 py-5`
 
 const Case = tw.div`w-full flex flex-col items-center justify-center mt-4`
 const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
@@ -19,6 +19,8 @@ const Title = tw.h1`text-lg font-Medium`
 const OptionPaket = tw.button`flex items-center justify-between w-full border-2 rounded-xl my-2 px-2 py-4`
 const TitlePaket = tw.p`text-[16px] font-Reguler`
 const Harga = tw.p`text-[16px] font-Reguler`
+const Screen = tw.div`w-full h-screen`
+
 
 // const CaseNominal = tw.div`w-full gap-5 grid grid-cols-3 mt-4`
 // const Nominal =tw.button`border-2 p-2 border-green-1 rounded-lg focus:bg-green-1 focus:text-white`
@@ -39,12 +41,13 @@ function PaketData() {
   return (
     <div>
       <Layout>
+        <Screen>
         <Header link={"/home"} title={"Paket Data"} />
         <CaseMenu>
-          <NavLink className='menu' to="/pulsa">
+          <NavLink className='menu' to="/pulsa" style={{width:"240px"}}>
             <MenuPulsa>Pulsa</MenuPulsa>
           </NavLink>
-          <NavLink className='menu' to="/paket-data">
+          <NavLink className='menu' to="/paket-data" style={{width:"240px"}}>
             <MenuPulsa>Paket Data</MenuPulsa>
           </NavLink>
         </CaseMenu>
@@ -72,6 +75,7 @@ function PaketData() {
             <MainButton>Lanjutkan</MainButton>
           </NavLink>
         </Container>
+        </Screen>
       </Layout>
     </div>
   )

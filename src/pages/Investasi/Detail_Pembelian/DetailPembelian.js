@@ -17,52 +17,54 @@ const NameLogo = tw.h2`text-[16px] font-Medium text-black `
 const Deskripsi = tw.h2`text-[16px] font-Reguler text-[#535353]`
 
 const CaseNominal = tw.div`w-full flex items-center mt-5`
-const CaseRight = tw.div`flex flex-col items-start mr-52`
+const CaseRight = tw.div`flex flex-col items-start justify-between w-full `
 const TitleNominal = tw.p`text-[#989898] text-[16px] font-Reguler`
-const Harga = tw.h2`font-Medium text-[26px]`
+const Harga = tw.h2`font-Medium sm:text-xl md:text-[26px]`
 const LembarSaham = tw.p`text-green-1 text-sm font-Light`
 const CaseLeft = tw.div``
 const IconCancel = tw.div`text-red-500 text-3xl`
+const Screen = tw.div`w-full h-screen`
 
 
 function DetailPembelian() {
   return (
     <div>
       <Layout style={{ position: "relative" }}>
-        <Header link={"/detail-reksadana"} title={"Detail Pembelian"} />
-        <Container>
-          <CaseListReksadana>
-            <CaseLogo>
-              <Logo src={Bni} />
-            </CaseLogo>
-            <CaseTitle>
-              <NameLogo>
-                Bank Nasional Indonesia
-              </NameLogo>
-              <Deskripsi>
-                Keuntungan investasi dengan mudah
-              </Deskripsi>
-            </CaseTitle>
-          </CaseListReksadana>
+        <Screen>
+          <Header link={"/detail-reksadana"} title={"Detail Pembelian"} />
           <Container>
-            <CaseNominal>
-              <CaseRight>
-                <TitleNominal>Nominal Investasi</TitleNominal>
-                <Harga>Rp 15.000</Harga>
-                <LembarSaham>2 lembar saham</LembarSaham>
-              </CaseRight>
-              <CaseLeft>
-                <IconCancel>
-                  <MdOutlineCancel />
-                </IconCancel>
-              </CaseLeft>
-            </CaseNominal>
+            <CaseListReksadana>
+              <CaseLogo>
+                <Logo src={Bni} />
+              </CaseLogo>
+              <CaseTitle>
+                <NameLogo>
+                  Bank Nasional Indonesia
+                </NameLogo>
+                <Deskripsi>
+                  Keuntungan investasi dengan mudah
+                </Deskripsi>
+              </CaseTitle>
+            </CaseListReksadana>
+            <Container>
+              <CaseNominal>
+                <CaseRight>
+                  <TitleNominal>Nominal Investasi</TitleNominal>
+                  <Harga>Rp 15.000</Harga>
+                  <LembarSaham>2 lembar saham</LembarSaham>
+                </CaseRight>
+                <CaseLeft>
+                  <IconCancel>
+                    <MdOutlineCancel />
+                  </IconCancel>
+                </CaseLeft>
+              </CaseNominal>
+            </Container>
+            <Link to='/pembayaran'>
+              <MainButton style={{ marginTop: "480px" }}>Bayar</MainButton>
+            </Link>
           </Container>
-          <Link to='/pembayaran'>
-            <MainButton style={{ marginTop: "480px" }}>Bayar</MainButton>
-          </Link>
-        </Container>
-
+        </Screen>
       </Layout>
     </div>
   )

@@ -10,14 +10,27 @@ const CaseListReksadana = tw.div`w-full  flex items-center  border-2 border-gree
 const CaseTitle = tw.div`pl-3 flex flex-col justify-center items-start py-3`
 const NameLogo = tw.h2`text-[16px] text-green-1 font-Semibold   `
 const Deskripsi = tw.h2`text-[16px] font-Reguler text-[#535353]`
+const Screen = tw.div`w-full h-screen`
 
 function Alamat() {
     return (
         <div>
             <Layout>
-                <Header link={"/user"} title={"Alamat"} />
-                <Container>
-                    <NavLink to='/detail-alamat'>
+                <Screen>
+                    <Header link={"/user"} title={"Alamat"} />
+                    <Container>
+                        <NavLink to='/detail-alamat'>
+                            <CaseListReksadana>
+                                <CaseTitle>
+                                    <NameLogo>
+                                        Rumah
+                                    </NameLogo>
+                                    <Deskripsi>
+                                        Keuntungan investasi dengan mudah
+                                    </Deskripsi>
+                                </CaseTitle>
+                            </CaseListReksadana>
+                        </NavLink>
                         <CaseListReksadana>
                             <CaseTitle>
                                 <NameLogo>
@@ -28,33 +41,23 @@ function Alamat() {
                                 </Deskripsi>
                             </CaseTitle>
                         </CaseListReksadana>
-                    </NavLink>
-                    <CaseListReksadana>
-                        <CaseTitle>
-                            <NameLogo>
-                                Rumah
-                            </NameLogo>
-                            <Deskripsi>
-                                Keuntungan investasi dengan mudah
-                            </Deskripsi>
-                        </CaseTitle>
-                    </CaseListReksadana>
-                    <CaseListReksadana>
-                        <CaseTitle>
-                            <NameLogo>
-                                Rumah
-                            </NameLogo>
-                            <Deskripsi>
-                                Keuntungan investasi dengan mudah
-                            </Deskripsi>
-                        </CaseTitle>
-                    </CaseListReksadana>
-                </Container>
-                <Container style={{ width: "100%", position: "absolute", bottom: '0' }}>
-                    <NavLink to='/tambah-alamat' >
-                        <MainButton>Tambah Alamat</MainButton>
-                    </NavLink>
-                </Container>
+                        <CaseListReksadana>
+                            <CaseTitle>
+                                <NameLogo>
+                                    Rumah
+                                </NameLogo>
+                                <Deskripsi>
+                                    Keuntungan investasi dengan mudah
+                                </Deskripsi>
+                            </CaseTitle>
+                        </CaseListReksadana>
+                    </Container>
+                    <Container style={{ width: "100%", position: "absolute", bottom: '0' }}>
+                        <NavLink to='/tambah-alamat' >
+                            <MainButton>Tambah Alamat</MainButton>
+                        </NavLink>
+                    </Container>
+                </Screen>
             </Layout>
         </div>
     )

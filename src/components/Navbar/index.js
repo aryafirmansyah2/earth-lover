@@ -12,7 +12,7 @@ import {FaRegUser} from 'react-icons/fa'
 
 import { NavLink } from 'react-router-dom'
 
-const CaseNavbar = tw.div` w-[480px] drop-shadow-xl fixed bottom-0 z-10 `
+const CaseNavbar = tw.div` w-full max-w-[480px] fixed bottom-0 z-10 `
 const BgNavbar = tw.img`w-full`
 const CaseIcons = tw.div`absolute w-full h-full  top-0 flex items-end justify-around pb-5 `
 const CaseIcon = tw.div`w-full flex flex-col items-center justify-end h-full hover:text-green-1`

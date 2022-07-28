@@ -7,25 +7,28 @@ import Layout from '../../../components/Layout'
 
 const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
 const Content = tw.h1`w-full py-5 pl-5 border-b-2 border-[#EAEAEA] text-[16px] font-Reguler `
+const Screen = tw.div`w-full h-screen`
 
 function Bantuan() {
     return (
         <div>
             <Layout>
-                <Header link={'/user'} title={'Bantuan'} />
-                <Container>
-                    <CaseContent>
-                        <NavLink to="/hubunngi-kami"  style={{width:"100%"}}>
-                            <Content>Hubungi kami</Content>
-                        </NavLink>
-                        <NavLink to="/hubunngi-kami" style={{width:"100%"}}>
-                            <Content>Ketentuan Layanan</Content>
-                        </NavLink>
-                        <NavLink to="/hubunngi-kami" style={{width:"100%"}}>
-                            <Content>Kebijakan Privasi</Content>
-                        </NavLink>
-                    </CaseContent>
-                </Container>
+                <Screen>
+                    <Header link={'/user'} title={'Bantuan'} />
+                    <Container>
+                        <CaseContent>
+                            <NavLink to="/hubunngi-kami" style={{ width: "100%" }}>
+                                <Content>Hubungi kami</Content>
+                            </NavLink>
+                            <NavLink to="/hubunngi-kami" style={{ width: "100%" }}>
+                                <Content>Ketentuan Layanan</Content>
+                            </NavLink>
+                            <NavLink to="/hubunngi-kami" style={{ width: "100%" }}>
+                                <Content>Kebijakan Privasi</Content>
+                            </NavLink>
+                        </CaseContent>
+                    </Container>
+                </Screen>
             </Layout>
         </div>
     )

@@ -21,11 +21,14 @@ const Price = tw.h1`text-2xl text-[#16BF78] font-Bold`
 const CaseButton = tw.div`w-1/2 h-full items-center justify-center flex`
 const ButtonSell = tw.button`bg-[#16BF78] text-white text-sm font-Medium px-6 py-2 rounded-lg`
 const Title = tw.h1`w-full text-xl font-Medium mt-7`
+const Screen = tw.div`w-full h-screen`
+
 
 function Investasi() {
     return (
         <>
             <Layout>
+                <Screen>
                 <Header link={"/home"} title={"Yuk Investasi"} />
                 <Container>
                     <CaseCard>
@@ -47,6 +50,7 @@ function Investasi() {
                     <ListReksadana logo={Bca} logoname={"Bank Central Asia"}/>
                     <ListReksadana logo={Mandiri} logoname={"Mandiri Pasar Uang Syariah"}/>
                 </Container>
+                </Screen>
             </Layout>
         </>
     )

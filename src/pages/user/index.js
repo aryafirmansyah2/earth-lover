@@ -11,7 +11,7 @@ import { BiEdit } from 'react-icons/bi'
 import MenuSetting from '../../components/User/MenuSetting'
 import { NavLink } from 'react-router-dom'
 
-const ContentUser = tw.div`w-full relative`
+const ContentUser = tw.div`w-full h-screen relative `
 const BgImgHero = tw.img`w-full`
 const ContainerUser = tw.div`absolute p-5 top-0`
 
@@ -24,9 +24,9 @@ const CaseProfile = tw.div`absolute w-full h-full flex items-center justify-star
 const BgInfoUser = tw.img`w-full`
 const CaseAvatar = tw.img`ml-7`
 const CaseTextUser = tw.div` ml-5 flex flex-col items-start justify-start `
-const Name = tw.div`text-white font-Semibold text-xl`
+const Name = tw.div`text-white font-Semibold sm:text-[18px] md:text-xl`
 const NoHp = tw.div`text-white font-Light text-sm`
-const CaseIcon = tw.div` ml-32 text-white text-3xl`
+const CaseIcon = tw.div` sm:ml-16 md:ml-32 text-white text-3xl`
 const IconEdit = tw.a``
 
 const Title = tw.h1`w-full text-[20px] font-Semibold mt-3 mb-4`
@@ -68,8 +68,8 @@ function User() {
                         <MenuSetting menu={"Ulasan"} link={'/ulasan'} />
                         <MenuSetting menu={"Logout"} link={'/'} />
                     </ContainerUser>
+                    <Navbar />
                 </ContentUser>
-                <Navbar />
             </Layout>
         </>
     )

@@ -9,6 +9,7 @@ import Navbar from '../../../components/Navbar'
 // import BtnSeconds from '../../../components/common/Button/Second'
 import MainButton from '../../../components/common/Button/Main'
 import DangerBtn from '../../../components/common/Button/DangerBtn'
+import Layout from '../../../components/Layout'
 
 const Bg = tw.div`w-full bg-blue-100 h-full `
 const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto`
@@ -19,8 +20,8 @@ const Title = tw.h1`text-lg font-Medium`
 const ProfilePetugas = tw.div` w-full flex items-center justify-between py-4`
 const FotoPtgs = tw.img``
 const CaseInfo = tw.div`flex flex-col justify-center items-start  `
-const NamaPtgs = tw.h2`text-lg font-Reguler `
-const Id = tw.h2`text-[16px] font-Bold`
+const NamaPtgs = tw.h2`sm:text-[16px] md:text-lg font-Reguler `
+const Id = tw.h2`sm:text-sm md:text-[16px] font-Bold`
 const CaseStatus = tw.div`flex items-center w-40`
 const IconStatus = tw.div`mr-3 text-[#979797]`
 const TitleStatus = tw.p`text-sm text-[#979797] font-Reguler`
@@ -39,8 +40,8 @@ const ToggleEye = tw.p`absolute mt-2 mr-5 text-green-1 font-Semibold`
 function DetailOrder() {
     return (
         <div>
-            <Bg>
-                <Plate>
+            {/* <Bg> */}
+                <Layout>
                     <Header link={"/"} title={"Detail Order"} />
                     <Container>
                         <Case>
@@ -110,8 +111,8 @@ function DetailOrder() {
                         </Link>
                     </Container>
                     <Navbar />
-                </Plate>
-            </Bg>
+                </Layout>
+            {/* </Bg> */}
         </div>
     )
 }

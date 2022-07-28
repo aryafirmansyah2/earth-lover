@@ -23,55 +23,57 @@ const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto `
 function TambahAlamat() {
     return (
         <div>
-            <Bg>
-                <Plate>
-                    <Header link={'/alamat'} title={'Tambah Alamat'} />
-                    <Container>
-                        <Case>
-                            <CaseContent>
-                                <Title>Nama Alamat </Title>
-                                <Input type='number' />
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Alamat </Title>
-                                <Input type='number' />
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Kelurahan </Title>
-                                <Input type='number' />
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Kecamatan </Title>
-                                <Input type='number' />
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Kode Pos </Title>
-                                <Input type='number' />
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Alamat :</Title>
-                                <Map src={map} />
-                            </CaseContent>
-                            <Deskripsi>
-                                *sesuaikan alamat dengan pin pada maps agar titik pengambilan lebih akurat
-                            </Deskripsi>
-                        </Case>
-                        <NavLink to='/alamat' >
-                            <MainButton>Simpan</MainButton>
-                        </NavLink>
-                    </Container>
-                </Plate>
-            </Bg>
+            {/* <Bg>
+                <Plate> */}
+            <Layout>
+                <Header link={'/alamat'} title={'Tambah Alamat'} />
+                <Container>
+                    <Case>
+                        <CaseContent>
+                            <Title>Nama Alamat </Title>
+                            <Input type='number' />
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Alamat </Title>
+                            <Input type='number' />
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Kelurahan </Title>
+                            <Input type='number' />
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Kecamatan </Title>
+                            <Input type='number' />
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Kode Pos </Title>
+                            <Input type='number' />
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Alamat :</Title>
+                            <Map src={map} />
+                        </CaseContent>
+                        <Deskripsi>
+                            *sesuaikan alamat dengan pin pada maps agar titik pengambilan lebih akurat
+                        </Deskripsi>
+                    </Case>
+                    <NavLink to='/alamat' >
+                        <MainButton>Simpan</MainButton>
+                    </NavLink>
+                </Container>
+            </Layout>
+            {/* </Plate>
+            </Bg> */}
         </div>
     )
 }

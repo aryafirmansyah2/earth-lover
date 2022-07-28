@@ -16,7 +16,7 @@ const TitleKode = tw.p`text-[12px] text-[#989898]`
 const Kode = tw.p`text-green-1 text-[14px]`
 const Title = tw.p`text-[16px]`
 const CaseCaraMembayar = tw.div`w-full flex flex-col mb-96`
-const CaraMembayar = tw.button`border-green-1 border-2 pr-72 py-3 rounded-2xl text-[#595959] text-[16px] focus:bg-green-1 focus:text-white`
+const CaraMembayar = tw.button`border-green-1 border-2 pl-5 py-3 rounded-2xl flex justify-start text-[#595959] text-[16px] focus:bg-green-1 focus:text-white`
 function SecPembayaran() {
     return (
         <div>

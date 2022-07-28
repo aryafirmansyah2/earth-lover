@@ -11,6 +11,7 @@ import './index.css'
 import Waktu from "./Data/Waktu";
 import DaurUlang from "./Data/DaurUlang";
 import Sampah from "./Data/Sampah";
+import Layout from "../../../components/Layout";
 
 
 const Case = tw.div`w-full flex flex-col items-center justify-center mt-4`
@@ -46,8 +47,8 @@ function Request_Pickup() {
 
     return (
         <div>
-            <Bg>
-                <Plate>
+            {/* <Bg> */}
+                <Layout>
                     <Header link={"/metode-pengumpulan"} title={"Request Pick Up"} />
                     <Container>
                         <Case>
@@ -104,8 +105,8 @@ function Request_Pickup() {
                             <MainButton>Lanjutkan</MainButton>
                         </Link>
                     </Container>
-                </Plate>
-            </Bg>
+                </Layout>
+            {/* </Bg> */}
         </div>
     )
 }

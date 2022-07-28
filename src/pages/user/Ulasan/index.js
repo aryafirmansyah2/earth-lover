@@ -12,82 +12,86 @@ const CaseDeskripsi = tw.div`ml-5`
 const NamaPicker = tw.h1`text-[16px] font-Medium `
 const CaseBintang = tw.div`w-full text-[#FDD350] flex items-center`
 const Penilaian = tw.p`text-[#6A6A6A] text-[14px] font-Reguler`
+const Screen = tw.div`w-full h-screen`
+
 
 function Ulasan() {
   return (
     <div>
       <Layout>
-        <Header link={'/user'} title={'Penilaian'} />
-        <Container>
-          <CasePicker>
-            <ImgPicker src={Avatar} />
-            <CaseDeskripsi>
-              <NamaPicker>Jhonas Thomson</NamaPicker>
-              <CaseBintang>
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <p style={{ color: "#6A6A6A",fontSize:"14px", fontFamily:"SF Pro Rounded Reguler"}}>Belum Dinilai</p>
-              </CaseBintang>
-              <Penilaian>
-                -
-              </Penilaian>
-            </CaseDeskripsi>
-          </CasePicker>
-          <CasePicker>
-            <ImgPicker src={Avatar} />
-            <CaseDeskripsi>
-              <NamaPicker>Jhonas Thomson</NamaPicker>
-              <CaseBintang>
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <p style={{ color: "#6A6A6A" }}>4.5</p>
-              </CaseBintang>
-              <Penilaian>
-                saya sangat puas atas pelayanan anda. dengan cepat lingkungan rumah saya lebih bersih dan rapi terbebas sampah
-              </Penilaian>
-            </CaseDeskripsi>
-          </CasePicker>
-          <CasePicker>
-            <ImgPicker src={Avatar} />
-            <CaseDeskripsi>
-              <NamaPicker>Jhonas Thomson</NamaPicker>
-              <CaseBintang>
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <p style={{ color: "#6A6A6A" }}>4.5</p>
-              </CaseBintang>
-              <Penilaian>
-                saya sangat puas atas pelayanan anda. dengan cepat lingkungan rumah saya lebih bersih dan rapi terbebas sampah
-              </Penilaian>
-            </CaseDeskripsi>
-          </CasePicker>
-          <CasePicker>
-            <ImgPicker src={Avatar} />
-            <CaseDeskripsi>
-              <NamaPicker>Jhonas Thomson</NamaPicker>
-              <CaseBintang>
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px" }} />
-                <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
-                <p style={{ color: "#6A6A6A" }}>4.5</p>
-              </CaseBintang>
-              <Penilaian>
-                saya sangat puas atas pelayanan anda. dengan cepat lingkungan rumah saya lebih bersih dan rapi terbebas sampah
-              </Penilaian>
-            </CaseDeskripsi>
-          </CasePicker>
-        </Container>
+        <Screen>
+          <Header link={'/user'} title={'Penilaian'} />
+          <Container>
+            <CasePicker>
+              <ImgPicker src={Avatar} />
+              <CaseDeskripsi>
+                <NamaPicker>Jhonas Thomson</NamaPicker>
+                <CaseBintang>
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <p style={{ color: "#6A6A6A", fontSize: "14px", fontFamily: "SF Pro Rounded Reguler" }}>Belum Dinilai</p>
+                </CaseBintang>
+                <Penilaian>
+                  -
+                </Penilaian>
+              </CaseDeskripsi>
+            </CasePicker>
+            <CasePicker>
+              <ImgPicker src={Avatar} />
+              <CaseDeskripsi>
+                <NamaPicker>Jhonas Thomson</NamaPicker>
+                <CaseBintang>
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <p style={{ color: "#6A6A6A" }}>4.5</p>
+                </CaseBintang>
+                <Penilaian>
+                  saya sangat puas atas pelayanan anda. dengan cepat lingkungan rumah saya lebih bersih dan rapi terbebas sampah
+                </Penilaian>
+              </CaseDeskripsi>
+            </CasePicker>
+            <CasePicker>
+              <ImgPicker src={Avatar} />
+              <CaseDeskripsi>
+                <NamaPicker>Jhonas Thomson</NamaPicker>
+                <CaseBintang>
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <p style={{ color: "#6A6A6A" }}>4.5</p>
+                </CaseBintang>
+                <Penilaian>
+                  saya sangat puas atas pelayanan anda. dengan cepat lingkungan rumah saya lebih bersih dan rapi terbebas sampah
+                </Penilaian>
+              </CaseDeskripsi>
+            </CasePicker>
+            <CasePicker>
+              <ImgPicker src={Avatar} />
+              <CaseDeskripsi>
+                <NamaPicker>Jhonas Thomson</NamaPicker>
+                <CaseBintang>
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px" }} />
+                  <AiFillStar style={{ marginRight: "5px", color: "#6A6A6A" }} />
+                  <p style={{ color: "#6A6A6A" }}>4.5</p>
+                </CaseBintang>
+                <Penilaian>
+                  saya sangat puas atas pelayanan anda. dengan cepat lingkungan rumah saya lebih bersih dan rapi terbebas sampah
+                </Penilaian>
+              </CaseDeskripsi>
+            </CasePicker>
+          </Container>
+        </Screen>
       </Layout>
     </div>
   )

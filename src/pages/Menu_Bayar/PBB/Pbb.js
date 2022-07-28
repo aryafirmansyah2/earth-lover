@@ -21,6 +21,8 @@ const InputWilayah = tw.button`border-2 rounded-xl mt-2 w-full`
 const Caseinput = tw.div`px-4 py-2 flex items-center justify-between`
 const Nama = tw.p``
 const Icon = tw.div``
+const Screen = tw.div`w-full h-screen`
+
 
 function Pbb() {
 
@@ -29,6 +31,7 @@ function Pbb() {
   return (
     <div>
       <Layout>
+        <Screen>
         <Header link={"/home"} title={"PBB"} />
         <Container >
           <Case>
@@ -69,6 +72,7 @@ function Pbb() {
             <MainButton>Lanjutkan</MainButton>
           </NavLink>
         </Container>
+        </Screen>
       </Layout>
     </div>
   )

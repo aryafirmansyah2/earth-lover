@@ -9,11 +9,14 @@ const CaseVoucher = tw.div`flex items-center justify-center w-full`
 const Case = tw.div`flex items-center justify-between p-6 w-full`
 const Voucher = tw.p`text-lg text-green-1 font-Medium`
 const Check = tw.input``
+const Screen = tw.div`w-full h-screen`
+
 
 function VoucherPromo() {
     return (
         <div>
             <Layout>
+                <Screen>
                 <Header link={"/bayar"} title={"Voucher Promo"} />
                 <Container>
                     <CaseVoucher>
@@ -34,6 +37,7 @@ function VoucherPromo() {
                     </CaseVoucher>
 
                 </Container>
+                </Screen>
             </Layout>
         </div>
     )

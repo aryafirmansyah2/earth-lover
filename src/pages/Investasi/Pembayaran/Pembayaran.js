@@ -18,9 +18,9 @@ const ButtonUbah = tw.button`bg-[#D9FDE5] text-green-1 px-4 py-2 rounded-2xl`
 
 const CaseInfoPembayaran = tw.div` w-full flex flex-col bottom-0 mt-96`
 const CaseInfo = tw.div``
-const CaseContent = tw.div`flex justify-between items-center`
+const CaseContent = tw.div`flex justify-between items-center mt-2`
 const Content = tw.p``
-const Line = tw.div`border-b-[1px] w-full border-b-[#E1E1E1]`
+const Line = tw.div`border-b-[1px] w-full border-b-[#E1E1E1] mt-2`
 const MainContent = tw.p`text-green-1 text-[18px] font-Semibold `
 
 
