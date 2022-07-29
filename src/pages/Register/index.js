@@ -23,6 +23,8 @@ const InputCheckBox = tw.input` w-10 h-10 mr-5`
 const TitleInputCheck = tw.div`flex mt-5`
 const CaseInputPw = tw.div`w-full relative items-center justify-end flex`
 const ToggleEye = tw.button`absolute mt-2 mr-5`
+const Screen = tw.div`w-full h-screen`
+
 
 const iconStyles =
 {
@@ -56,6 +58,7 @@ const Register = () => {
     return (
         <>
             <Layout>
+                <Screen>
                 <CaseHeader>
                     Register
                 </CaseHeader>
@@ -111,6 +114,7 @@ const Register = () => {
                         </TextRegister>
                     </ButtonLink>
                 </Container>
+                </Screen>
             </Layout>
         </>
     )

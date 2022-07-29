@@ -19,6 +19,7 @@ const Map = tw.img`mt-2 w-full`
 const Deskripsi = tw.p`font-Light text-sm`
 const Bg = tw.div`w-full bg-blue-100 h-full `
 const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto `
+const Screen = tw.div`w-full h-screen`
 
 function TambahAlamat() {
     return (
@@ -26,51 +27,53 @@ function TambahAlamat() {
             {/* <Bg>
                 <Plate> */}
             <Layout>
-                <Header link={'/alamat'} title={'Tambah Alamat'} />
-                <Container>
-                    <Case>
-                        <CaseContent>
-                            <Title>Nama Alamat </Title>
-                            <Input type='number' />
-                        </CaseContent>
-                    </Case>
-                    <Case>
-                        <CaseContent>
-                            <Title>Alamat </Title>
-                            <Input type='number' />
-                        </CaseContent>
-                    </Case>
-                    <Case>
-                        <CaseContent>
-                            <Title>Kelurahan </Title>
-                            <Input type='number' />
-                        </CaseContent>
-                    </Case>
-                    <Case>
-                        <CaseContent>
-                            <Title>Kecamatan </Title>
-                            <Input type='number' />
-                        </CaseContent>
-                    </Case>
-                    <Case>
-                        <CaseContent>
-                            <Title>Kode Pos </Title>
-                            <Input type='number' />
-                        </CaseContent>
-                    </Case>
-                    <Case>
-                        <CaseContent>
-                            <Title>Alamat :</Title>
-                            <Map src={map} />
-                        </CaseContent>
-                        <Deskripsi>
-                            *sesuaikan alamat dengan pin pada maps agar titik pengambilan lebih akurat
-                        </Deskripsi>
-                    </Case>
-                    <NavLink to='/alamat' >
-                        <MainButton>Simpan</MainButton>
-                    </NavLink>
-                </Container>
+                <Screen>
+                    <Header link={'/alamat'} title={'Tambah Alamat'} />
+                    <Container>
+                        <Case>
+                            <CaseContent>
+                                <Title>Nama Alamat </Title>
+                                <Input type='number' />
+                            </CaseContent>
+                        </Case>
+                        <Case>
+                            <CaseContent>
+                                <Title>Alamat </Title>
+                                <Input type='number' />
+                            </CaseContent>
+                        </Case>
+                        <Case>
+                            <CaseContent>
+                                <Title>Kelurahan </Title>
+                                <Input type='number' />
+                            </CaseContent>
+                        </Case>
+                        <Case>
+                            <CaseContent>
+                                <Title>Kecamatan </Title>
+                                <Input type='number' />
+                            </CaseContent>
+                        </Case>
+                        <Case>
+                            <CaseContent>
+                                <Title>Kode Pos </Title>
+                                <Input type='number' />
+                            </CaseContent>
+                        </Case>
+                        <Case>
+                            <CaseContent>
+                                <Title>Alamat :</Title>
+                                <Map src={map} />
+                            </CaseContent>
+                            <Deskripsi>
+                                *sesuaikan alamat dengan pin pada maps agar titik pengambilan lebih akurat
+                            </Deskripsi>
+                        </Case>
+                        <NavLink to='/alamat' >
+                            <MainButton>Simpan</MainButton>
+                        </NavLink>
+                    </Container>
+                </Screen>
             </Layout>
             {/* </Plate>
             </Bg> */}

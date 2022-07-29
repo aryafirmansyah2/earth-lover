@@ -19,6 +19,7 @@ const LineRL = tw.span`bg-[#FAFAFA] px-3 text-[#D0D0D0]`
 const CircleIcon = tw.span` p-2 rounded-lg border-4 border-[#16BF78] mt-10`
 const TextRegister = tw.h2`mt-7`
 const LinkRegiter = tw.a`text-[#16BF78] ml-2 border-b-[1px] border-[#16BF78] cursor-pointer`
+const Screen = tw.div`w-full h-screen`
 
 const iconStyles =
 {
@@ -40,53 +41,55 @@ const Login = () => {
     return (
         <>
             <Layout>
-                <CaseHeader>
-                    Login
-                </CaseHeader>
-                <Container>
-                    <FormInput>
-                        <TitleInput>
-                            <Title>
-                                Username
-                            </Title>
-                            <Input placeholder='enter your username' onChange={handleUsernameChange} value={usernameInput} name="username" />
-                        </TitleInput>
-                        <TitleInput>
-                            <Title>
-                                Password
-                            </Title>
-                            <Input placeholder='enter your password' type={"password"} onChange={handlePasswordChange} value={passwordInput} name="password" />
-                        </TitleInput>
-                    </FormInput>
-                    <Link to="/home">
-                        <MainButton>
-                            Login
-                        </MainButton>
-                    </Link>
-                    <ButtonLink>
-                        <ForgetPassword>
-                            Lupa Password ?
-                        </ForgetPassword>
-                        <CaseOr>
-                            <LineRL >
-                                Or
-                            </LineRL>
-                        </CaseOr>
-                        <CircleIcon>
-                            <FcGoogle style={iconStyles} />
-                        </CircleIcon>
-                        <TextRegister>
-                            belum memiliki akun?
-                            <LinkRegiter >
-                                <Link to="/register">
-                                    klik disini
-                                </Link>
-                            </LinkRegiter>
-                        </TextRegister>
-                    </ButtonLink>
-                </Container>
+                <Screen>
+                    <CaseHeader>
+                        Login
+                    </CaseHeader>
+                    <Container>
+                        <FormInput>
+                            <TitleInput>
+                                <Title>
+                                    Username
+                                </Title>
+                                <Input placeholder='enter your username' onChange={handleUsernameChange} value={usernameInput} name="username" />
+                            </TitleInput>
+                            <TitleInput>
+                                <Title>
+                                    Password
+                                </Title>
+                                <Input placeholder='enter your password' type={"password"} onChange={handlePasswordChange} value={passwordInput} name="password" />
+                            </TitleInput>
+                        </FormInput>
+                        <Link to="/home">
+                            <MainButton>
+                                Login
+                            </MainButton>
+                        </Link>
+                        <ButtonLink>
+                            <ForgetPassword>
+                                Lupa Password ?
+                            </ForgetPassword>
+                            <CaseOr>
+                                <LineRL >
+                                    Or
+                                </LineRL>
+                            </CaseOr>
+                            <CircleIcon>
+                                <FcGoogle style={iconStyles} />
+                            </CircleIcon>
+                            <TextRegister>
+                                belum memiliki akun?
+                                <LinkRegiter >
+                                    <Link to="/register">
+                                        klik disini
+                                    </Link>
+                                </LinkRegiter>
+                            </TextRegister>
+                        </ButtonLink>
+                    </Container>
+                </Screen>
             </Layout>
-            \        </>
+                 </>
     )
 }
 
