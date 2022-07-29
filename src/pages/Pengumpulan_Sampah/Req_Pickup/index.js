@@ -26,7 +26,7 @@ const CaseInputPw = tw.div`w-full relative items-center justify-end flex`
 const ToggleEye = tw.p`absolute mt-2 mr-5 text-green-1 font-Semibold`
 const Bg = tw.div`w-full bg-blue-100 h-full `
 const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto`
-const Screen =tw.div`w-full h-screen`
+const Screen = tw.div`w-full max-w-[480px] h-screen bg-white mx-auto fixed z-10`
 
 
 
@@ -49,66 +49,67 @@ function Request_Pickup() {
     return (
         <div>
             {/* <Bg> */}
-                <Layout>
-                    <Screen>
-                    <Header link={"/metode-pengumpulan"} title={"Request Pick Up"} />
-                    <Container>
-                        <Case>
-                            <CaseContent>
-                                <Title>Alamat :</Title>
-                                <InputAlamat />
-                                <Map src={map} />
-                            </CaseContent>
-                            <Deskripsi>
-                                sesuaikan alamat dengan pin pada maps agar titik pengambilan lebih akurat
-                            </Deskripsi>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Tanggal Pengambilan :</Title>
-                                <Tgl type="date" />
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Waktu Pengambilan :</Title>
-                                {Waktu.map(result => (
-                                    <ChoiceContainer className={result.className + (result.id === activeLinkWaktu ? " active " : "")} onClick={() => handleWaktu(result.id)}>{result.name}</ChoiceContainer>
-                                ))}
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Jenis Daur Ulang :</Title>
-                                {DaurUlang.map(result => (
-                                    <ChoiceContainer className={result.className + (result.id === activeLinkDaurUlang ? " active " : "")} onClick={() => handleDaurUlang(result.id)}>{result.name}</ChoiceContainer>
-                                ))}
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Jenis Sampah :</Title>
-                                {Sampah.map(result => (
-                                    <ChoiceContainer className={result.className + (result.id === activeLinkSampah ? " active " : "")} onClick={() => handleSampah(result.id)}>{result.name}</ChoiceContainer>
-                                ))}
-                            </CaseContent>
-                        </Case>
-                        <Case>
-                            <CaseContent>
-                                <Title>Bearat Sampah :</Title>
-                                <CaseInputPw >
-                                    <Input type="text" />
-                                    <ToggleEye>Kg</ToggleEye>
-                                </CaseInputPw>
-                            </CaseContent>
-                        </Case>
-                        <BtnSeconds>Tambah Item</BtnSeconds>
-                        <Link to="notif-menunggu" style={{ width: "100%" }}>
-                            <MainButton>Lanjutkan</MainButton>
-                        </Link>
-                    </Container>
-                    </Screen>
-                </Layout>
+            {/* <Screen/> */}
+            <Layout>
+
+                <Header link={"/metode-pengumpulan"} title={"Request Pick Up"} />
+                <Container>
+                    <Case>
+                        <CaseContent>
+                            <Title>Alamat :</Title>
+                            <InputAlamat />
+                            <Map src={map} />
+                        </CaseContent>
+                        <Deskripsi>
+                            sesuaikan alamat dengan pin pada maps agar titik pengambilan lebih akurat
+                        </Deskripsi>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Tanggal Pengambilan :</Title>
+                            <Tgl type="date" />
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Waktu Pengambilan :</Title>
+                            {Waktu.map(result => (
+                                <ChoiceContainer className={result.className + (result.id === activeLinkWaktu ? " active " : "")} onClick={() => handleWaktu(result.id)}>{result.name}</ChoiceContainer>
+                            ))}
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Jenis Daur Ulang :</Title>
+                            {DaurUlang.map(result => (
+                                <ChoiceContainer className={result.className + (result.id === activeLinkDaurUlang ? " active " : "")} onClick={() => handleDaurUlang(result.id)}>{result.name}</ChoiceContainer>
+                            ))}
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Jenis Sampah :</Title>
+                            {Sampah.map(result => (
+                                <ChoiceContainer className={result.className + (result.id === activeLinkSampah ? " active " : "")} onClick={() => handleSampah(result.id)}>{result.name}</ChoiceContainer>
+                            ))}
+                        </CaseContent>
+                    </Case>
+                    <Case>
+                        <CaseContent>
+                            <Title>Bearat Sampah :</Title>
+                            <CaseInputPw >
+                                <Input type="text" />
+                                <ToggleEye>Kg</ToggleEye>
+                            </CaseInputPw>
+                        </CaseContent>
+                    </Case>
+                    <BtnSeconds>Tambah Item</BtnSeconds>
+                    <Link to="notif-menunggu" style={{ width: "100%" }}>
+                        <MainButton>Lanjutkan</MainButton>
+                    </Link>
+                </Container>
+                {/* </Screen> */}
+            </Layout>
             {/* </Bg> */}
         </div>
     )

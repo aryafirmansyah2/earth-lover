@@ -16,7 +16,7 @@ const CasePadding2 = tw.div`w-full flex items-center justify-between  p-6`
 const NamaMetode = tw.p` text-[16px] text-[#454545] font-Medium`
 const ButtonUbah = tw.button`bg-[#D9FDE5] text-green-1 px-4 py-2 rounded-2xl`
 
-const CaseInfoPembayaran = tw.div` w-full flex flex-col bottom-0 mt-96`
+const CaseInfoPembayaran = tw.div` w-full flex flex-col bottom-0 mt-[350px]`
 const CaseInfo = tw.div``
 const CaseContent = tw.div`flex justify-between items-center mt-2`
 const Content = tw.p``
@@ -30,7 +30,7 @@ function Pembayaran() {
   return (
     <div>
       <Layout>
-        <Screen>
+        {/* <Screen> */}
         <Header link={'/detail-pembelian'} title={"Pembayaran"} />
         <Container>
           <CaseTotalHarga>
@@ -71,7 +71,7 @@ function Pembayaran() {
             </Link>
           </Container>
         </CaseInfoPembayaran>
-        </Screen>
+        {/* </Screen> */}
       </Layout>
     </div>
   )

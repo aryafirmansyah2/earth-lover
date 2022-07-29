@@ -43,7 +43,7 @@ function DetailOrder() {
         <div>
             {/* <Bg> */}
                 <Layout>
-                    <Screen>
+                    {/* <Screen> */}
                     <Header link={"/"} title={"Detail Order"} />
                     <Container>
                         <Case>
@@ -113,7 +113,7 @@ function DetailOrder() {
                         </Link>
                     </Container>
                     <Navbar />
-                    </Screen>
+                    {/* </Screen> */}
                 </Layout>
             {/* </Bg> */}
         </div>
