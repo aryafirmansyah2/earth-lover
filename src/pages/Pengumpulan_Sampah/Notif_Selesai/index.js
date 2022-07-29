@@ -10,7 +10,7 @@ const Case = tw.div`h-full w-full flex flex-col justify-center items-center `
 const CaseHero = tw.div`h-full w-full flex flex-col justify-center items-center pb-52 pt-72`
 const HrLoading = tw.img``
 const TitleMain = tw.h2`text-green-1 text-[24px] font-Semibold `
-const TitleSec = tw.p`text-[#052E1D] text-sm font-Reguler`
+const TitleSec = tw.p`text-[#052E1D] text-sm font-Reguler text-center`
 const Screen = tw.div`w-full h-screen`
 
 
