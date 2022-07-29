@@ -9,23 +9,26 @@ import Layout from '../../../components/Layout'
 
 const CaseNomer = tw.div`w-full flex flex-col mb-[650px] `
 const Title = tw.p`font-Medium`
+const Screen = tw.div`w-full h-screen`
 
 function InputNomerBpjs() {
     return (
         <div>
             <Layout>
-                <Header link={'/bpjs'} title={'BPJS'} />
-                <Container>
-                    <CaseNomer>
-                        <Title>
-                            Nomer Pelanggan
-                        </Title>
-                        <Input type='text' />
-                    </CaseNomer>
-                    <NavLink to='/bayar'>
-                        <MainButton>Lanjutkan</MainButton>
-                    </NavLink>
-                </Container>
+                <Screen>
+                    <Header link={'/bpjs'} title={'BPJS'} />
+                    <Container>
+                        <CaseNomer>
+                            <Title>
+                                Nomer Pelanggan
+                            </Title>
+                            <Input type='text' />
+                        </CaseNomer>
+                        <NavLink to='/bayar'>
+                            <MainButton>Lanjutkan</MainButton>
+                        </NavLink>
+                    </Container>
+                </Screen>
             </Layout>
         </div>
     )

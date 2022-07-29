@@ -22,6 +22,7 @@ const CaseContent = tw.div`flex justify-between items-center mt-2`
 const Content = tw.p``
 const Line = tw.div`border-b-[1px] w-full border-b-[#E1E1E1] mt-2`
 const MainContent = tw.p`text-green-1 text-[18px] font-Semibold `
+const Screen =tw.div`w-full h-screen`
 
 
 
@@ -29,6 +30,7 @@ function Pembayaran() {
   return (
     <div>
       <Layout>
+        <Screen>
         <Header link={'/detail-pembelian'} title={"Pembayaran"} />
         <Container>
           <CaseTotalHarga>
@@ -69,6 +71,7 @@ function Pembayaran() {
             </Link>
           </Container>
         </CaseInfoPembayaran>
+        </Screen>
       </Layout>
     </div>
   )

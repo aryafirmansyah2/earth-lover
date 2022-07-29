@@ -17,34 +17,37 @@ const Kode = tw.p`text-green-1 text-[14px]`
 const Title = tw.p`text-[16px]`
 const CaseCaraMembayar = tw.div`w-full flex flex-col mb-96`
 const CaraMembayar = tw.button`border-green-1 border-2 pl-5 py-3 rounded-2xl flex justify-start text-[#595959] text-[16px] focus:bg-green-1 focus:text-white`
+const Screen = tw.div`w-full h-screen`
 function SecPembayaran() {
     return (
         <div>
             <Layout>
-                <Header link={'/pembayaran'} title={'Pembayaran'} />
-                <Container>
-                    <CaseTotalHarga>
-                        <CasePadding>
-                            <CaseLeft>
-                                <TitleHarga>Harga</TitleHarga>
-                                <NominalHarga>Rp 5.000</NominalHarga>
-                            </CaseLeft>
-                            <CaseRight>
-                                <TitleKode>Kode</TitleKode>
-                                <Kode>AB123</Kode>
-                            </CaseRight>
-                        </CasePadding>
-                    </CaseTotalHarga>
-                    <Title>Cara Membayar</Title>
-                    <CaseCaraMembayar>
-                        <CaraMembayar style={{ marginTop: "25px" }}>Mesin ATM</CaraMembayar>
-                        <CaraMembayar style={{ marginTop: "10px" }}>Mobile Banking</CaraMembayar>
-                        <CaraMembayar style={{ marginTop: "10px" }}>Internet Banking</CaraMembayar>
-                    </CaseCaraMembayar>
-                    <Link to='/notif-selesai'>
-                        <MainButton>selesai</MainButton>
-                    </Link>
-                </Container>
+                <Screen>
+                    <Header link={'/pembayaran'} title={'Pembayaran'} />
+                    <Container>
+                        <CaseTotalHarga>
+                            <CasePadding>
+                                <CaseLeft>
+                                    <TitleHarga>Harga</TitleHarga>
+                                    <NominalHarga>Rp 5.000</NominalHarga>
+                                </CaseLeft>
+                                <CaseRight>
+                                    <TitleKode>Kode</TitleKode>
+                                    <Kode>AB123</Kode>
+                                </CaseRight>
+                            </CasePadding>
+                        </CaseTotalHarga>
+                        <Title>Cara Membayar</Title>
+                        <CaseCaraMembayar>
+                            <CaraMembayar style={{ marginTop: "25px" }}>Mesin ATM</CaraMembayar>
+                            <CaraMembayar style={{ marginTop: "10px" }}>Mobile Banking</CaraMembayar>
+                            <CaraMembayar style={{ marginTop: "10px" }}>Internet Banking</CaraMembayar>
+                        </CaseCaraMembayar>
+                        <Link to='/notif-selesai'>
+                            <MainButton>selesai</MainButton>
+                        </Link>
+                    </Container>
+                </Screen>
             </Layout>
         </div>
     )

@@ -35,6 +35,7 @@ const InputDisabled = tw.input`w-full bg-[#EBFEF2] text-green-1 text-sm font-Sem
 const InputNumber = tw.input`w-full bg-transparent border-[1.5px] border-green-1 text-green-1 text-sm font-Semibold rounded-lg py-3 px-2 my-4  `
 const CaseInputPw = tw.div`w-full relative items-center justify-end flex`
 const ToggleEye = tw.p`absolute mt-2 mr-5 text-green-1 font-Semibold`
+const Screen =tw.div`w-full h-screen`
 
 
 function DetailOrder() {
@@ -42,6 +43,7 @@ function DetailOrder() {
         <div>
             {/* <Bg> */}
                 <Layout>
+                    <Screen>
                     <Header link={"/"} title={"Detail Order"} />
                     <Container>
                         <Case>
@@ -111,6 +113,7 @@ function DetailOrder() {
                         </Link>
                     </Container>
                     <Navbar />
+                    </Screen>
                 </Layout>
             {/* </Bg> */}
         </div>

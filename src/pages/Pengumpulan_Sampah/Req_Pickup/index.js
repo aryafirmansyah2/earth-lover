@@ -26,6 +26,7 @@ const CaseInputPw = tw.div`w-full relative items-center justify-end flex`
 const ToggleEye = tw.p`absolute mt-2 mr-5 text-green-1 font-Semibold`
 const Bg = tw.div`w-full bg-blue-100 h-full `
 const Plate = tw.div`w-[480px] h-full bg-[#F9FFFA] m-auto`
+const Screen =tw.div`w-full h-screen`
 
 
 
@@ -49,6 +50,7 @@ function Request_Pickup() {
         <div>
             {/* <Bg> */}
                 <Layout>
+                    <Screen>
                     <Header link={"/metode-pengumpulan"} title={"Request Pick Up"} />
                     <Container>
                         <Case>
@@ -105,6 +107,7 @@ function Request_Pickup() {
                             <MainButton>Lanjutkan</MainButton>
                         </Link>
                     </Container>
+                    </Screen>
                 </Layout>
             {/* </Bg> */}
         </div>

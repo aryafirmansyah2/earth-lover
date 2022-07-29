@@ -22,6 +22,7 @@ const ButtonMain = tw.button`w-full bg-green-1 py-3 rounded-lg mt-2 text-white t
 const CaseAlasan = tw.div`w-full flex flex-col items-start justify-center mt-10`
 const Alasan = tw.h1`text-[16px] font-Medium`
 const InputAlasan = tw.textarea`w-full h-32 rounded-2xl border-[2px] border-green-1 mt-4 px-4 py-2 text-[16px]`
+const Screen =tw.div`w-full h-screen`
 
 const SidebarAnime = {
   hidden: {
@@ -70,6 +71,7 @@ function NotifMenunggu() {
   return (
     <div>
       <Layout>
+        <Screen>
         <Container>
           <Case >
             <Link to="/detail-order">
@@ -102,6 +104,7 @@ function NotifMenunggu() {
             </BgCancel>
           )}
         </AnimatePresence>
+        </Screen>
       </Layout>
     </div>
   )
