@@ -15,7 +15,7 @@ function RiwayatOrder() {
     return (
         <>
             <Layout>
-                <Screen>
+                {/* <Screen> */}
                     <Header link={"/home"} title={"Riwayat Order"} />
                     <Container>
                         <ListOrder status={<BgProse1>Proses</BgProse1>} />
@@ -23,7 +23,7 @@ function RiwayatOrder() {
                         <ListOrder status={<BgProse3>Dibatalkan</BgProse3>} />
                     </Container>
                     <Navbar />
-                </Screen>
+                {/* </Screen> */}
             </Layout>
         </>
     )

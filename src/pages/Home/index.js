@@ -23,7 +23,7 @@ import Layout from '../../components/Layout';
 
 const Bg = tw.div`w-full h-full  bg-blue-100 `
 const Plate = tw.div`max-w-[480px] h-full bg-[#fefefe] mx-auto z-10 relative `
-const ContentHome = tw.div`relative h-[102vh] `
+const ContentHome = tw.div`relative w-full h-screen mb-40`
 const BgHero = tw.img`w-full `
 const ContainerHero = tw.div`w-full h-full top-0 px-5 absolute `
 const CaseText = tw.div`sm:pt-28 md:pt-44 pb-14 `
@@ -58,10 +58,10 @@ function Home() {
     <>
       {/* <Bg> */}
       <Layout>
-        <ContentHome>
+       <ContentHome>
           <BgHero src={BgHeroo} />
-          <ContainerHero>
-            <CaseText>
+           <ContainerHero>
+             <CaseText>
               <TextHeroMain>
                 Peduli Lingkungan Dapatkan Cuan
               </TextHeroMain>
@@ -123,7 +123,7 @@ function Home() {
             <TextBayar>
               Bayar Tagihan & Top Up
             </TextBayar>
-            <Swiper slidesPerView={4.5} spaceBetween={10} style={{ marginBottom: "500px" }}>
+            <Swiper slidesPerView={4.5} spaceBetween={10} >
               <SwiperSlide>
                 <ItemsMenu
                   link={"/prabayar-pln"}
@@ -155,7 +155,7 @@ function Home() {
                   title={"PBB"} />
               </SwiperSlide>
             </Swiper>
-          </ContainerHero>
+          </ContainerHero> 
         </ContentHome>
         <Navbar />
       </Layout>

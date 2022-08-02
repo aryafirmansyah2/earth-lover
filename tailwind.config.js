@@ -15,7 +15,7 @@ module.exports = {
         Bold:["SF Pro Rounded Bold"],
       },
       screens: {
-        'sm': '375px',
+        'sm': '360px',
         'md': '480px',
       },
     },
