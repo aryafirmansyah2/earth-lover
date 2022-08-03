@@ -18,7 +18,7 @@ function UbahPin() {
     return (
         <div>
             <Layout>
-                <Screen>
+
                     <Header link={'/edit-user'} title={'Ganti Pin'} />
                     <Container>
                         <CaseAlert>
@@ -38,9 +38,9 @@ function UbahPin() {
                             <Title>Autentifikasi Pin Baru</Title>
                             <Input placeholder='Masukan kode autentifikasi' />
                         </CaseInput>
-                        <MainButton style={{ marginTop: "400px" }}>Simpan</MainButton>
+                        <MainButton>Simpan</MainButton>
                     </Container>
-                </Screen>
+
             </Layout>
         </div>
     )

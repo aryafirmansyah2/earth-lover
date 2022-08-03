@@ -11,7 +11,7 @@ import { BiEdit } from 'react-icons/bi'
 import MenuSetting from '../../components/User/MenuSetting'
 import { NavLink } from 'react-router-dom'
 
-const ContentUser = tw.div`w-full h-screen relative `
+const ContentUser = tw.div`w-full h-screen relative sm:mb-24 md:mb-0`
 const BgImgHero = tw.img`w-full`
 const ContainerUser = tw.div`absolute p-5 top-0`
 

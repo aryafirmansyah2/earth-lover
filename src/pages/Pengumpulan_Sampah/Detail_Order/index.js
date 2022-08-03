@@ -19,10 +19,10 @@ const CaseContent = tw.div`w-full flex flex-col items-start justify-center`
 const Title = tw.h1`text-lg font-Medium`
 const ProfilePetugas = tw.div` w-full flex items-center justify-between py-4`
 const FotoPtgs = tw.img``
-const CaseInfo = tw.div`flex flex-col justify-center items-start  `
-const NamaPtgs = tw.h2`sm:text-[16px] md:text-lg font-Reguler `
+const CaseInfo = tw.div`flex flex-col justify-center items-start `
+const NamaPtgs = tw.h2`sm:text-[14px] md:text-lg  font-Reguler `
 const Id = tw.h2`sm:text-sm md:text-[16px] font-Bold`
-const CaseStatus = tw.div`flex items-center w-40`
+const CaseStatus = tw.div`flex items-center sm:w-32 md:w-40 `
 const IconStatus = tw.div`mr-3 text-[#979797]`
 const TitleStatus = tw.p`text-sm text-[#979797] font-Reguler`
 

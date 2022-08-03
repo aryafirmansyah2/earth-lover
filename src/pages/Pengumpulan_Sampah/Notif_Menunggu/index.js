@@ -7,14 +7,14 @@ import HeroLoading from '../../../assets/Foto/loading.svg'
 import tw from 'twin.macro'
 import DangerBtn from '../../../components/common/Button/DangerBtn'
 
-const Case = tw.div`h-full w-full flex flex-col justify-center items-center `
+const Case = tw.div`sm:h-[500px] md:h-full w-full flex flex-col justify-center items-center `
 const CaseHero = tw.div`h-full w-full flex flex-col justify-center items-center pb-52 pt-72`
 const HrLoading = tw.img``
 const TitleMain = tw.h2`text-green-1 text-[24px] font-Semibold `
-const TitleSec = tw.p`text-[#052E1D] text-sm font-Reguler`
+const TitleSec = tw.p`text-[#052E1D] text-sm font-Reguler text-center`
 
-const BgCancel = tw.div`bg-black bg-opacity-50   w-full h-full absolute bottom-0 flex items-end justify-center drop-shadow-2xl`
-const DivCancel = tw(motion.div)`bg-white w-full h-[60%] rounded-t-3xl flex flex-col items-center justify-start`
+const BgCancel = tw.div`bg-black bg-opacity-50   w-full sm:h-screen md:h-screen absolute top-0 flex items-end justify-center drop-shadow-2xl`
+const DivCancel = tw(motion.div)`bg-white w-full  rounded-t-3xl flex flex-col items-center justify-start`
 const CaseContentCancel = tw.div`w-full   flex flex-col items-center justify-start`
 const TitleCancel = tw.h1`font-Bold text-[20px] mt-[40px]`
 const ButtonSec = tw.button`w-full bg-transparent border-2 rounded-lg border-green-1 mt-[32px] py-2 text-[14px] text-green-1 font-Reguler`
@@ -71,7 +71,6 @@ function NotifMenunggu() {
   return (
     <div>
       <Layout>
-        <Screen>
         <Container>
           <Case >
             <Link to="/detail-order">
@@ -104,7 +103,6 @@ function NotifMenunggu() {
             </BgCancel>
           )}
         </AnimatePresence>
-        </Screen>
       </Layout>
     </div>
   )

@@ -18,7 +18,7 @@ const ImgMenu = tw.img``
 const TitleMetode = tw.h1`text-lg font-Medium text-white mt-10`
 const TitleMetode2 = tw.h1`text-lg font-Medium text-[#16BF78] mt-10`
 const ButtonRiwayat = tw.button`border-2 border-green-1 rounded-3xl w-full mt-24 py-3 text-green-1 text-lg font-Semibold `
-const Screen = tw.div`w-full h-screen`
+const Screen = tw.div`w-full sm:h-[80px] md:h-screen`
 
 const styled = {
     width: "100%",

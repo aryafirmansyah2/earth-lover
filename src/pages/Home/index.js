@@ -23,7 +23,7 @@ import Layout from '../../components/Layout';
 
 const Bg = tw.div`w-full h-full  bg-blue-100 `
 const Plate = tw.div`max-w-[480px] h-full bg-[#fefefe] mx-auto z-10 relative `
-const ContentHome = tw.div`relative w-full h-screen mb-40`
+const ContentHome = tw.div`relative w-full h-screen sm:mb-20 md:mb-6`
 const BgHero = tw.img`w-full `
 const ContainerHero = tw.div`w-full h-full top-0 px-5 absolute `
 const CaseText = tw.div`sm:pt-28 md:pt-44 pb-14 `
