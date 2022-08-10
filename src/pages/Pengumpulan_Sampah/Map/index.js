@@ -1,18 +1,20 @@
 import React from 'react'
 import tw from 'twin.macro'
-import BgMap from '../../../assets/Bg/Map.png'
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import Layout from '../../../components/Layout'
 import { Link } from 'react-router-dom'
 import Avatar1 from '../../../assets/Avatar/Frame 6.svg'
 import { FaTruck } from 'react-icons/fa'
+import './index.css'
 
 import { BsArrowLeftShort } from 'react-icons/bs'
 import Container from '../../../components/common/Container'
 import Navbar from '../../../components/Navbar'
+import RoutingMachine from './route';
 // import MainButton from '../../../components/common/Button/Main'
 
 const Case = tw.div`w-full h-screen flex justify-center relative `
-const Bg = tw.img`h-full w-[480px]`
+const CaseMap = tw.div`h-screen w-full `
 
 const CaseInfo = tw.div`absolute bottom-0 w-full h-96 bg-white rounded-tl-[30px] rounded-tr-[30px] `
 
@@ -33,7 +35,15 @@ function Map() {
         <div>
             <Layout>
                 <Case>
-                    <Bg src={BgMap} />
+                    <CaseMap>
+                        <MapContainer center={[-7.57026839783718, 112.23677066814048]} zoom={16} zoomControl={false} scrollWheelZoom={true} className='con'>
+                            <TileLayer
+                                url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+                                attribution="Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri"
+                            />
+                            <RoutingMachine />
+                        </MapContainer>
+                    </CaseMap>
                     <IconArrow>
                         <Link to='/notif-selesai'>
                             <BsArrowLeftShort />

@@ -5,6 +5,7 @@ import Header from '../../components/Header'
 import Container from '../../components/common/Container'
 import Navbar from '../../components/Navbar'
 import ListOrder from '../../components/Order/Riwayat_Order'
+import { Link } from 'react-router-dom'
 
 const BgProse1 = tw.div`w-full font-Medium h-8 sm:text-sm md:text-[16px] bg-[#FDFDE3] text-[#DDBA02] px-10 rounded-2xl flex items-center justify-center content-['proses']`;
 const BgProse2 = tw.div`w-full font-Medium h-8 sm:text-sm md:text-[16px] bg-[#D9FDE5] text-green-1 px-10 rounded-2xl flex items-center justify-center content-['selesai']`;
@@ -16,13 +17,15 @@ function RiwayatOrder() {
         <>
             <Layout>
                 {/* <Screen> */}
-                    <Header link={"/home"} title={"Riwayat Order"} />
-                    <Container>
+                <Header link={"/home"} title={"Riwayat Order"} />
+                <Container>
+                    <Link to="/map">
                         <ListOrder status={<BgProse1>Proses</BgProse1>} />
-                        <ListOrder status={<BgProse2>Selesai</BgProse2>} />
-                        <ListOrder status={<BgProse3>Dibatalkan</BgProse3>} />
-                    </Container>
-                    <Navbar />
+                    </Link>
+                    <ListOrder status={<BgProse2>Selesai</BgProse2>} />
+                    <ListOrder status={<BgProse3>Dibatalkan</BgProse3>} />
+                </Container>
+                <Navbar />
                 {/* </Screen> */}
             </Layout>
         </>

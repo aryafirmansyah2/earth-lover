@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import tw from 'twin.macro'
 import './wilayah.css'
 import Container from '../../../components/common/Container'
@@ -13,6 +13,14 @@ const CaseMainTitle = tw.button`w-32 text-white font-Medium py-2 flex items-cent
 const Screen = tw.div`w-full h-screen`
 
 function Wilayah() {
+  const [wilayah, setWilayah] = useState('');
+  console.log(wilayah)
+
+  function Test(wilayah) {
+    localStorage.setItem("wilayah", wilayah)
+    console.log(wilayah)
+  }
+
   const dropdownRef = useRef(null);
   const dropdownRef2 = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
@@ -36,22 +44,22 @@ function Wilayah() {
             >
               <ul>
                 <li>
-                  <NavLink to="/pdam">Kota Surabaya</NavLink>
+                  <NavLink onClick={()=>Test("Kota Surabya")} to="/pdam">Kota Surabaya</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kab. Sidoarjo</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Sidoarjo")} to="/pdam">Kab. Sidoarjo</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kota Malang</NavLink>
+                  <NavLink onClick={()=>Test("Kota Malang")}  to="/pdam">Kota Malang</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kab. Malang</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Malang")}  to="/pdam">Kab. Malang</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kota Kediri </NavLink>
+                  <NavLink onClick={()=>Test("Kota Kediri")}  to="/pdam">Kota Kediri </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kota Madiun</NavLink>
+                  <NavLink onClick={()=>Test("Kota Madiun")}  to="/pdam">Kota Madiun</NavLink>
                 </li>
               </ul>
             </nav>
@@ -66,16 +74,16 @@ function Wilayah() {
             >
               <ul>
                 <li>
-                  <NavLink to="/pdam">Kota Solo</NavLink>
+                  <NavLink onClick={()=>Test("Kota Solo")}  to="/pdam">Kota Solo</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kab. Sukoharjo</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Sukaharjo")}  to="/pdam">Kab. Sukoharjo</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kota Semarang</NavLink>
+                  <NavLink onClick={()=>Test("Kota Semarang")}  to="/pdam">Kota Semarang</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pdam">Kab. Sragen</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Sragen")}  to="/pdam">Kab. Sragen</NavLink>
                 </li>
               </ul>
             </nav>

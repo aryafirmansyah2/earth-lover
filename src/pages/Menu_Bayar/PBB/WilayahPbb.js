@@ -1,4 +1,5 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
+import tw from 'twin.macro'
 import './wilayah.css'
 import Container from '../../../components/common/Container'
 import Header from '../../../components/Header'
@@ -6,13 +7,20 @@ import Layout from '../../../components/Layout'
 import { useDetectOutsideClick } from "../../../components/common/Dropdown";
 import { HiLocationMarker } from "react-icons/hi"
 import { NavLink } from 'react-router-dom'
-import tw from 'twin.macro'
 
 const MainTitle = tw.button`w-full bg-green-1 rounded-xl mt-2`
 const CaseMainTitle = tw.button`w-32 text-white font-Medium py-2 flex items-center justify-around pl-3 rounded-xl`
 const Screen = tw.div`w-full h-screen`
 
-function WilayahPbb() {
+function Wilayah() {
+  // const [wilayah, setWilayah] = useState('');
+  // console.log(wilayah)
+
+  function Test(wilayah) {
+    localStorage.setItem("wilayah", wilayah)
+    console.log(wilayah)
+  }
+
   const dropdownRef = useRef(null);
   const dropdownRef2 = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
@@ -36,22 +44,22 @@ function WilayahPbb() {
             >
               <ul>
                 <li>
-                  <NavLink to="/pbb">Kota Surabaya</NavLink>
+                  <NavLink onClick={()=>Test("Kota Surabya")} to="/pbb">Kota Surabaya</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kab. Sidoarjo</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Sidoarjo")} to="/pbb">Kab. Sidoarjo</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kota Malang</NavLink>
+                  <NavLink onClick={()=>Test("Kota Malang")}  to="/pbb">Kota Malang</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kab. Malang</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Malang")}  to="/pbb">Kab. Malang</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kota Kediri </NavLink>
+                  <NavLink onClick={()=>Test("Kota Kediri")}  to="/pbb">Kota Kediri </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kota Madiun</NavLink>
+                  <NavLink onClick={()=>Test("Kota Madiun")}  to="/pbb">Kota Madiun</NavLink>
                 </li>
               </ul>
             </nav>
@@ -66,16 +74,16 @@ function WilayahPbb() {
             >
               <ul>
                 <li>
-                  <NavLink to="/pbb">Kota Solo</NavLink>
+                  <NavLink onClick={()=>Test("Kota Solo")}  to="/pbb">Kota Solo</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kab. Sukoharjo</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Sukaharjo")}  to="/pbb">Kab. Sukoharjo</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kota Semarang</NavLink>
+                  <NavLink onClick={()=>Test("Kota Semarang")}  to="/pbb">Kota Semarang</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/pbb">Kab. Sragen</NavLink>
+                  <NavLink onClick={()=>Test("Kab. Sragen")}  to="/pbb">Kab. Sragen</NavLink>
                 </li>
               </ul>
             </nav>
@@ -86,4 +94,4 @@ function WilayahPbb() {
   )
 }
 
-export default WilayahPbb
+export default Wilayah

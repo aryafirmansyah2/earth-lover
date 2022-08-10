@@ -46,7 +46,7 @@ function Pbb() {
               <InputTahun>
                 <NavLink to='/pilih-tahun-pbb'>
                   <Caseinput>
-                    <Nama>2021</Nama>
+                    <Nama>{localStorage.getItem("tahun")}</Nama>
                     <Icon><GrFormNext /></Icon>
                   </Caseinput>
                 </NavLink>
@@ -59,7 +59,7 @@ function Pbb() {
               <InputWilayah>
                 <NavLink to='/pilih-wilayah-pbb'>
                   <Caseinput>
-                    <Nama>Surabaya</Nama>
+                    <Nama>{ localStorage.getItem("wilayah") }</Nama>
                     <Icon><GrFormNext /></Icon>
                   </Caseinput>
                 </NavLink>
