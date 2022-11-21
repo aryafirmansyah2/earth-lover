@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import tw from 'twin.macro'
 import Container from '../../components/common/Container'
 import Input from '../../components/common/Input'
@@ -24,37 +24,32 @@ const InputCheckBox = tw.input` w-10 h-10 mr-5`
 const TitleInputCheck = tw.div`flex mt-5`
 const CaseInputPw = tw.div`w-full relative items-center justify-end flex`
 const ToggleEye = tw.button`absolute mt-2 mr-5`
+const Screen = tw.div`w-full h-screen`
 const Validation = tw.p`text-red-500 mt-2`
 
 
 
-// const iconStyles =
-// {
-//     fontSize: "3rem",
-// };
+const iconStyles =
+{
+    fontSize: "3rem",
+};
 const iconEye =
 {
     fontSize: "1.5rem",
 };
 
-const Register = () => {
+const RegisterPckr = () => {
 
-    const [typePassword, setTypePassword] = useState("password")
+    const [typePassword, setTypePassword] = useState()
     const [passwordInput, setPasswordInput] = useState("");
     const [usernameInput, setUsernameInput] = useState("");
     const [emailInput, setEmailInput] = useState("");
-    const [pinInput] = useState("111111");
-    const [phoneInput] = useState("000000000000");
+    const [licencePlate, setLicencePlate] = useState("")
+    const [address, setAddress] = useState("")
+    const [pinInput, setPinInput] = useState("");
+    const [phoneInput, setPhoneInput] = useState("");
     const [validation, setValidation] = useState()
     const navigate = useNavigate()
-
-    // useEffect(() => {
-    //     if (localStorage.getItem("token") && localStorage.getItem('role') === 'customer' ) {
-    //         navigate('/home')
-    //     }else{
-    //         navigate('/home-pckr')
-    //     }
-    // }, []);
 
     const HandleTypePassword = () => {
         setTypePassword(!typePassword)
@@ -69,18 +64,28 @@ const Register = () => {
             'name': usernameInput,
             'phone_number': phoneInput,
             'pin': pinInput,
+            'address': address,
+            'licence_plate' : licencePlate
         }
 
-        axios.post("https://earthlover.inagata.com/api/customer/register", Data)
+        axios.post("https://earthlover.herokuapp.com/api/picker/register", Data)
             .then((res) => {
                 console.log(res.data)
-                navigate("/")
+                navigate("/picker")
             })
             .catch((error) => {
                 console.log(error.response.data)
                 setValidation(error.response.data)
             })
     }
+
+    // useEffect(() => {
+    //     if (localStorage.getItem("token") && localStorage.getItem('role') === 'picker' ) {
+    //         navigate('/home-pckr')
+    //     }else{
+    //         navigate('/home')
+    //     }
+    // }, []);
 
     return (
         <>
@@ -114,7 +119,7 @@ const Register = () => {
                             }
                         </TitleInput>
                         <TitleInput>
-                            <Title>Username</Title>
+                            <Title>Password</Title>
                             <CaseInputPw>
                                 <Input placeholder='enter your username' type={typePassword ? "password" : "text"} onChange={(e) => setPasswordInput(e.target.value)} value={passwordInput} />
                                 <ToggleEye onClick={HandleTypePassword}>{typePassword ? <AiOutlineEyeInvisible style={iconEye} /> : <AiFillEye style={iconEye} />}</ToggleEye>
@@ -122,6 +127,62 @@ const Register = () => {
                             {
                                 validation && (
                                     <Validation>{validation.error.password}</Validation>
+                                )
+                            }
+                        </TitleInput>
+                        <TitleInput>
+                            <Title>Phone Number</Title>
+                            <Input placeholder='enter your phone number' type="text" onChange={(e) => setPhoneInput(e.target.value)} value={phoneInput} />
+                            {
+                                validation && (
+                                    <Validation>{validation.error.phone_number}</Validation>
+                                )
+                            }
+                            {
+                                validation && (
+                                    <Validation>{validation.error}</Validation>
+                                )
+                            }
+                        </TitleInput>
+                        <TitleInput>
+                            <Title>Address</Title>
+                            <Input placeholder='enter your address' type="text" onChange={(e) => setAddress(e.target.value)} value={address} />
+                            {
+                                validation && (
+                                    <Validation>{validation.error.address}</Validation>
+                                )
+                            }
+                            {
+                                validation && (
+                                    <Validation>{validation.error}</Validation>
+                                )
+                            }
+                        </TitleInput>
+                        <TitleInput>
+                            <Title>Licence Plate</Title>
+                            <Input placeholder='enter your licence plate' type="text" onChange={(e) => setLicencePlate(e.target.value)} value={licencePlate} />
+                            {
+                                validation && (
+                                    <Validation>{validation.error.licence_plate}</Validation>
+                                )
+                            }
+                            {
+                                validation && (
+                                    <Validation>{validation.error}</Validation>
+                                )
+                            }
+                        </TitleInput>
+                        <TitleInput>
+                            <Title>Pin</Title>
+                            <Input placeholder='enter your pin' type="text" onChange={(e) => setPinInput(e.target.value)} value={pinInput} />
+                            {
+                                validation && (
+                                    <Validation>{validation.error.pin}</Validation>
+                                )
+                            }
+                            {
+                                validation && (
+                                    <Validation>{validation.error}</Validation>
                                 )
                             }
                         </TitleInput>
@@ -136,7 +197,7 @@ const Register = () => {
                             <LineRL>Or</LineRL>
                         </CaseOr>
                         <CircleIcon><FcGoogle style={{fontSize:"30px"}}/></CircleIcon>
-                        <TextRegister>Sudah memiliki akun? <LinkRegiter href='/'>klik disini</LinkRegiter></TextRegister>
+                        <TextRegister>Sudah memiliki akun? <LinkRegiter href='/picker'>klik disini</LinkRegiter></TextRegister>
                     </ButtonLink>
                 </Container>
             </Layout>
@@ -146,4 +207,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default RegisterPckr

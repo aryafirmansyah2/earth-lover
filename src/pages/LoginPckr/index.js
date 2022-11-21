@@ -29,7 +29,7 @@ const iconStyles =
     fontSize: "3rem",
 };
 
-const Login = () => {
+const LoginPckr = () => {
     // const navigate = useNavigate()
     const [passwordInput, setPasswordInput] = useState("");
     const [emailInput, setEmailInput] = useState("");
@@ -53,26 +53,18 @@ const Login = () => {
     const LoginHandler = (e) => {
         e.preventDefault();
 
-        // const formData = new FormData();
-        // formData.append('email', emailInput)
-        // formData.append('password', passwordInput)
-
         let Data = {
             "email": emailInput,
             "password": passwordInput,
         }
 
-        axios.post("https://earthlover.inagata.com/api/customer/login", Data)
+        axios.post("https://earthlover.herokuapp.com/api/picker/login", Data)
             .then((responese) => {
                 console.log(responese.data)
-                // console.log(responese.data.token)
-
-                // setData(responese.data)
                 if (responese.data.status === true) {
-                    navigate('/home')
-                    // localStorage.setItem('islogin', "login")
+                    navigate('/home-pckr')
                     localStorage.setItem("token", responese.data.token)
-                    localStorage.setItem("role", "customer")
+                    localStorage.setItem("role", "picker")
                 }
             })
             .catch((error) => {
@@ -150,7 +142,7 @@ const Login = () => {
                             <TextRegister>
                                 belum memiliki akun?
                                 <LinkRegiter >
-                                    <Link to="/register">
+                                    <Link to="/register-picker">
                                         klik disini
                                     </Link>
                                 </LinkRegiter>
@@ -158,8 +150,8 @@ const Login = () => {
                             <TextRegister>
                                Login sebagai
                                 <LinkRegiter >
-                                    <Link to="/picker">
-                                        Picker
+                                    <Link to="/">
+                                        Customer
                                     </Link>
                                 </LinkRegiter>
                             </TextRegister>
@@ -171,4 +163,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginPckr
